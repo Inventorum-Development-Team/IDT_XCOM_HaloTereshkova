@@ -278,41 +278,54 @@ en-US:
   STR_8GAUGE_SHELLS: "M45 8-Gauge Shotgun Speedloader"
   STR_M90_8GAUGE_SHELLS: "M90 8-Gauge Shotgun Speedloader"
 
-  STR_M319: M319 Grenade Launcher
-  STR_M319_GRENADE: 40mm Grenade
-  STR_M319_UFOPEDIA: "A single-shot, break-action explosives launcher produced by Misriah Armory. Although it is less effective against energy shielded Covenant foes, it can be used to deadly effect against unshielded targets."
-  STR_GL_DIRECT: Direct Shot
-  STR_GL_ARC: Arcing Shot
+  STR_M319: "M319 Grenade Launcher"
+  STR_M319_GRENADE: "40mm Grenade"
+   TR_M319_UFOPEDIA: "A single-shot, break-action grenade launcher produced by Misriah Armory. Though less effective against energy shields, its 40mm munitions remain highly lethal to unshielded infantry and soft targets."
+
+  STR_GL_DIRECT: "Direct Shot"
+  STR_GL_ARC: "Arcing Shot"
+
   STR_GRENADE: "M9 Frag Grenade"
-  STR_GRENADE_UFOPEDIA: "M9 Dual-Purpose, High-Explosive (M9 DP-HE) fragmentation grenades are very useful gadgets for clearing large groups of enemies, especially if they are not armored. The metal casing explodes on contact, obliterating nearby enemies."
-  STR_M247H_MG: M247H Machine Gun
-  STR_M247H_MG_UFOPEDIA: "A widely used turreted machine gun. Incredibly heavy and thus can only be used by exceptionally strong units."
-  STR_BR55: BR55HB-SR Battle Rifle
-  STR_BR55_UFOPEDIA: "Select-Fire, Heavy Barrel variant of the Battle Rifle, commonly used for medium to long range engagements in it's 3-round burst mode. Uses the M634 X-HP-SAP experimental cartridge and a 2x KFA Scope."
-  STR_BR55_MAG: 9.5x40mm BR55 Magazine
-  STR_M392: M392 DMR
-  STR_M392_UFOPEDIA: "A UNSC Army favorite, a long to medium range rifle, commonly used in semi-auto mode mounted with an EVOS-D 3x Optic Scope, chambered in the same round as the MA5 series."
-  STR_M392_MAG: 7.62x51mm DMR Magazine
-  STR_SRS99: SRS99-AM Sniper Rifle
-  STR_SRS99_UFOPEDIA: "Semi-automatic rifle fitted with an ORACLE N-Variant Scope, chambered in 14.5x114 HVAP or APFSDS, warnings of overpenetration are issued to marksmen using the SRS99."
-  STR_SRS99_MAG: 14.5x114mm SRS99 Magazine
-  STR_MA37: MA37 ICWS
-  STR_MA37_UFOPEDIA: "Skeletonized, simpler and more reliable early variant of the MA5, with over a century of service. Includes a flash hider and an external, modular electronics suite, uses M118 FMJ rounds."
-  STR_MA5K: "MA5K Carbine"
-  STR_MA5K_UFOPEDIA: "Compact and lightweight version of the MA5 line, used by special UNSC units - usually SPARTANS. By removing the electronics compartment and replacing it with a carrying handle, the operator's mobility is facilitated. It uses the same magazines as the MA37."
-  STR_MA37_MAG: 7.62x51mm MA37 Magazine
-  STR_MA5B: MA5B Assault Rifle
-  STR_MA5B_UFOPEDIA: "The bulkier, heavier variant of the MA37, used by the Marine Corps, comes with an integrated flashlight and electronics suite, as well as a large 60-round magazine chambered in M118 FMJ."
+  STR_GRENADE_UFOPEDIA: "The M9 DP-HE fragmentation grenade is a dual-purpose explosive ideal for clearing clustered threats. On detonation, its casing sends high-velocity fragments across a wide radius."
+
+  STR_M247H_MG: "M247H Machine Gun"
+  STR_M247H_MG_UFOPEDIA: "A robust, turret-mounted heavy machine gun widely deployed in fixed defenses. Extremely heavy, and thus usable only by exceptionally strong or augmented operators. This variant is adapted to be handheld."
+
+  STR_BR55: "BR55 Battle Rifle"
+  STR_BR55_UFOPEDIA: "A standard-issue, select-fire Battle Rifle favored for its controlled three-round burst mode and balanced handling. Chambered for the M634 X-HP-SAP round and equipped with a 2x KFA optic, it excels in medium-range fire support."
+  STR_BR55_MAG: "9.5x40mm BR55 Magazine"
+
+  STR_M392: "M392 DMR"
+  STR_M392_UFOPEDIA: "A designated marksman rifle valued for accuracy and simplicity, typically paired with an EVOS-D 3x optic. While gradually being phased out by the Marine Corps in favor of newer patterns, it remains a mainstay of UNSC Army marksmen due to its reliability and shared caliber with the MA5 series."
+  STR_M392_MAG: "7.62x51mm DMR Magazine"
+
+  STR_SRS99: "SRS99-AM Sniper Rifle"
+  STR_SRS99_UFOPEDIA: "A semi-automatic anti-materiel sniper rifle fitted with an ORACLE N-Variant scope. Chambered in 14.5x114mm HVAP or APFSDS, it offers tremendous penetration—operators are cautioned about severe overpenetration risks."
+  STR_SRS99_MAG: "14.5x114mm SRS99 Magazine"
+
+  STR_MA37: "MA37 ICWS"
+  STR_MA37_UFOPEDIA: "A stripped-down, durable precursor to the MA5 line with over a century of service. Its simplified frame, flash hider, and modular external electronics suite make it easy to maintain. Uses M118 FMJ ammunition."
+
+   TR_MA5K: "MA5K Carbine"
+  STR_MA5K_UFOPEDIA: "A compact carbine variant of the MA5 platform, designed for mobility and close-quarters work. Often issued to special units (most notably Spartans) after removing the electronics housing and replacing it with a lightweight carry handle. Shares magazines with the MA37."
+  STR_MA37_MAG: "7.62x51mm MA37 Magazine"
+
+  STR_MA5B: "MA5B Assault Rifle"
+  STR_MA5B_UFOPEDIA: "A heavier, more electronics-rich evolution of the MA37, widely used by the Marine Corps. Features an integrated flashlight, reinforced internal systems, and a high-capacity 60-round magazine. The larger magazine size is appreciated in boarding actions and close-quarters combat."
+
   STR_MA5B_MAG: "7.62x51mm MA5B Magazine"
-  
+
   STR_VK78_COMMANDO_RIFLE: "VK78 Commando DMR"
-  STR_VK78_COMMANDO_RIFLE_UFOPEDIA: "Former standard-issue battle rifle of the disbanded Colonial Military Authority, it entered service in 2495, now retired from frontline service. Meant to replace the aging HMG-38, the Colonial Military stockpiled large numbers of VK78s; many of them were provided to planetary militias to equip their self-defense forces. "
+   TR_VK78_COMMANDO_RIFLE_UFOPEDIA: "A former CMA standard-issue rifle adopted in 2495 as a general-purpose battle rifle. Large stockpiles remain after the CMA’s dissolution, many of which were transferred to militia forces, including the ones operating in Tereshkova. Originally intended to replace aging frontier weapons like the HMG-38."
   STR_VK78_COMMANDO_RIFLE_MAG: "6.5x48mm VK78 Magazine"
+
   STR_HMG38_MONITOR_RIFLE: "HMG-38 Monitor Rifle"
   STR_HMG38_MONITOR_RIFLE_MAG: "8.6x39mm HMG-38 Magazine"
-  STR_HMG38_MONITOR_RIFLE_UFOPEDIA: "Old and outdated heavy automatic rifle. Originally configured as a squad support weapon, many were adapted to become handheld rifles. Despite being cumbersome, unpopular and somewhat difficult to aim, it was used for more than 200 years. Many were smuggled by corrupt CMA officials and made their way to the insurgent arsenals, where it's appreciated for its easy maintenance and high rate of fire."
+  STR_HMG38_MONITOR_RIFLE_UFOPEDIA: "An outdated heavy automatic rifle dating back centuries. Initially a squad-support weapon, many were modified into cumbersome handheld rifles. Despite its weight and coarse handling, its simplicity and high rate of fire make it popular among insurgent groups, helped by decades of illicit sales."
+
   STR_CM300_FRONTIER_CARBINE: "CM300 Frontier Carbine"
-  STR_CM300_FRONTIER_CARBINE_UFOPEDIA: "Nicknamed 'The Confetti Maker' for its insane rate of fire, able to empty a full magazine in seconds. A carbine variant of the MA3 series, it was very widespread among the numerous late-24th Century colonial settlers. Quickly copied and reproduced across the black market, it became a staple of the Insurrectionist movement, as its their preferred weapon of choice. Adapted to use MA5B magazines."
+  STR_CM300_FRONTIER_CARBINE_UFOPEDIA: "A high-rate-of-fire carbine derived from the MA3 series, nicknamed 'The Confetti Maker' for its blistering cyclic rate. Mass-produced across frontier colonies and widely copied on the black market, it became a hallmark weapon of Insurrectionist cells. Adapted to accept MA5B magazines."
+
   
   STR_TYPE_25_PLASMA_PISTOL: Type-25 Pistol
   STR_PLASMA_PISTOL_CELL: Type-25 Pistol Battery
