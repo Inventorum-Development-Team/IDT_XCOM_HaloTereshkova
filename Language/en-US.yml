@@ -327,44 +327,60 @@ en-US:
   STR_CM300_FRONTIER_CARBINE_UFOPEDIA: "A high-rate-of-fire carbine derived from the MA3 series, nicknamed 'The Confetti Maker' for its blistering cyclic rate. Mass-produced across frontier colonies and widely copied on the black market, it became a hallmark weapon of Insurrectionist cells. Adapted to accept MA5B magazines."
 
   
-  STR_TYPE_25_PLASMA_PISTOL: Type-25 Pistol
-  STR_PLASMA_PISTOL_CELL: Type-25 Pistol Battery
-  STR_PLASMA_RIFLE_ELITE: Type-25 Plasma Rifle/Elite-pattern
-  STR_PLASMA_RIFLE_BRUTE: Type-25 Plasma Rifle/Brute-pattern
-  STR_PLASMA_RIFLE_BRUTE_CELL: Type-25 Rifle Battery/Brute
-  STR_PLASMA_RIFLE_CELL: Type-25 Rifle Battery/Elite
-  STR_PLASMA_REPEATER: Type-51 Plasma Repeater
-  STR_PLASMA_REPEATER_CELL: Type-51 Repeater Battery
-  STR_NEEDLER: Type-33 'Needler' GLM
-  STR_NEEDLER_CANISTER: Type-33 'Needler' Canister
-  STR_PLASMA_CARBINE: Type-51 Carbine
-  STR_PLASMA_CARBINE_MAG: 8.7x60mm Caseless Carbine Magazine
+  STR_TYPE_25_PLASMA_PISTOL: "Type-25 Pistol"
+  STR_PLASMA_PISTOL_CELL: "Type-25 Pistol Battery"
+  STR_PLASMA_RIFLE_ELITE: "Type-25 Plasma Rifle/Elite-pattern"
+  STR_PLASMA_RIFLE_BRUTE: "Type-25 Plasma Rifle/Brute-pattern"
+  STR_PLASMA_RIFLE_BRUTE_CELL: "Type-25 Rifle Battery/Brute"
+  STR_PLASMA_RIFLE_CELL: "Type-25 Rifle Battery/Elite"
+
+  STR_PLASMA_REPEATER: "Type-51 Plasma Repeater"
+  STR_PLASMA_REPEATER_CELL: "Type-51 Repeater Battery"
+
+  STR_NEEDLER: "Type-33 'Needler' GLM"
+  STR_NEEDLER_CANISTER: "Type-33 'Needler' Canister"
+
+  STR_PLASMA_CARBINE: "Type-51 Carbine"
+  STR_PLASMA_CARBINE_MAG: "8.7x60mm Caseless Carbine Magazine"
+
   STR_PLASMA_GRENADE: "Type-1 Antipersonnel 'Plasma' Grenade"
   STR_PLASMA_GRENADE_INV: " "
   STR_PLASMA_GRENADE_PRIMED: "Type-1 Antipersonnel 'Plasma' Grenade"
-  STR_PLASMA_GRENADE_UFOPEDIA: "Standard hand grenade of Covenant infantry, it can {ALT}stick to both human and Covenant units{ALT}. It contains a small plasma generator which vents it's coolant once primed, and once all has been discharged explodes, unleashing a big energy blast with {ALT}90 points of damage{ALT}."
+
   STR_FUEL_ROD_GUN: "Type-33 'Fuel Rod Gun' LAAW"
   STR_FUEL_ROD_GUN_RACK: "Type-33 LAAW Radioactive Rod Rack"
+
   STR_ENERGY_SWORD: "Type-1 Energy Sword"
   STR_ENERGY_SWORD_BATTERY: "Type-1 Energy Sword Battery"
+
   STR_MINOR_SHIELD_GAUNTLET: "Jackal Minor Shield Gauntlet"
-  STR_MAJOR_SHIELD_GAUNTLET: "Jackal Major Shield Gauntlet"
+   TR_MAJOR_SHIELD_GAUNTLET: "Jackal Major Shield Gauntlet"
+
   STR_NEEDLE_RIFLE: "Type-31 Needle Rifle"
   STR_NEEDLE_RIFLE_CANISTER: "Type-31 Needle Rifle Canister"
-  STR_PLASMA_GHOST_CANNON: "Class-2 Plasma Gun"
-  
 
-  STR_TYPE_25_PLASMA_PISTOL_UFOPEDIA: "Probably the most widespread infantry weapon in the entire enemy arsenal. It employs a single plasma generator, giving it a compact appearance. It may look somewhat weak, but it features a secondary fire mode that greatly boosts the weapon's damage, at the cost of consuming the battery much faster."
-  STR_PLASMA_RIFLE_ELITE_UFOPEDIA: "Standard infantry weapon of Covenant units, similar in use to our assault rifles. It employs two parallel-mounted plasma generators, linked by the trigger guard. This doubles its rate of fire, compared to using a single generator. However, its accuracy declines with distance."
-  STR_PLASMA_RIFLE_BRUTE_UFOPEDIA: "Variant of the Plasma Rifle, employed only by Brute units. It seems that its rate of fire and damage has been increased. It has not been reported to be used by any other Covenant units, the reason remains unknown."
-  STR_PLASMA_REPEATER_UFOPEDIA: "We consider this weapon an improved variant of the Plasma Rifle. Even more similar to our assault rifles, its firepower is superior, as is its rate of fire. However, it is very rare to find these weapons on the battlefield, they have only recently been listed as part of the Covenant arsenal. Their automatic fire is inaccurate and overheats the weapon, but single shots have considerable aim."
-  STR_NEEDLER_UFOPEDIA: "A peculiar weapon that fires small, razor-sharp explosive crystals. How it reloads has not been correctly identified, although it has been noted that the crystals protrude from the top of the shell, like 'needles'. Perhaps a way to indicate the amount of ammunition remaining, or perhaps the manner of storing such projectiles... is truly a mystery."
-  STR_PLASMA_CARBINE_UFOPEDIA: "A powerful long-range weapon, seen occasionally since 2526, but identified only last year. Instead of employing superheated plasma, it fires radioactive projectiles of an extremely toxic exotic material, not found on the periodic table. It fires at supersonic speed. It features a sight that is somewhat cumbersome to employ, but allows for accurate firing once the user gets used to it."
-  STR_FUEL_ROD_GUN_UFOPEDIA: "A launcher of heavy radioactive projectiles composed of an incendiary gel that explodes violently on contact. Its ability to launch such fuel cartridges in a parabolic trajectory makes it a weapon of care. It is suggested to consider eliminating users of such launchers as a priority."
-  STR_ENERGY_SWORD_UFOPEDIA: "This close combat weapon is a symbol of power and status in the Covenant hierarchy. Sangheili users are often the equivalent of lords and knights in medieval Europe. It is a devastating weapon that employs superheated plasma along two thin blades. The curved hilt contains the plasma generator and two magnetic generators. Its battery is consumed with each thrust and can be recharged."
-  STR_JACKAL_SHIELD_GAUNTLET_UFOPEDIA: "Employed on the forearm of Jackal soldiers, this shield employs a 'linear energy field' that deflects projectiles and absorbs projectile energy until the energy generator is saturated and collapses. The color of the shield reflects the user's rank."
-  STR_NEEDLE_RIFLE_UFOPEDIA: "A long ranged iteration of the Needler. Sacrifices close range, automatic killing power for accuracy and long ranged support."
-  STR_PLASMA_GHOST_CANNON_UFOPEDIA: "Class-2s are very powerful automatic energy weapons, designed for combat against infantry at short ranges. They are usually mounted in pairs on Type-32 'Ghost' reconnaissance and support vehicles, although they are not well suited to engage heavy armor."
+  STR_PLASMA_GHOST_CANNON: "Class-2 Plasma Gun"
+
+   TR_TYPE_25_PLASMA_PISTOL_UFOPEDIA: "One of the most common enemy sidearms. Likely powered by a single compact plasma generator, giving it a small profile. Regular shots seem weak, but field reports confirm a charge-up function that drastically increases output at the cost of rapid battery drain. Exact cooling and regulation systems remain unidentified."
+   STR_PLASMA_RIFLE_ELITE_UFOPEDIA: "The standard weapon of Elite infantry. Its twin plasma generators appear to fire in alternating cycles, giving it a high rate of fire but reduced long-range precision. Heat buildup is significant, and Covenant users seem trained to compensate. Further analysis is limited by the weapon's sensitivity to damage when captured."
+  STR_PLASMA_RIFLE_BRUTE_UFOPEDIA: "A heavier, more aggressive model seemingly reserved for Brute units. Fires hotter bolts at a faster rhythm, though accuracy appears poor. Whether this pattern is biologically tuned to Brute physiology or restricted for cultural reasons remains speculation."
+  STR_PLASMA_REPEATER_UFOPEDIA: "A newly observed weapon with performance resembling an upgraded Plasma Rifle. It fires extremely fast but overheats quickly in automatic fire. Single shots are surprisingly accurate. Rare on the battlefield, suggesting limited distribution or experimental status."
+  STR_NEEDLER_UFOPEDIA: "Launches self-propelled crystal shards that detonate shortly after embedding in a target. The source of the crystals and their propulsion method remain a complete mystery; samples disintegrate within minutes of recovery. Ammunition appears to cycle automatically inside the frame."
+
+STR_PLASMA_CARBINE_UFOPEDIA: "A precision rifle firing exotic radioactive projectiles at high velocity. The projectiles seem to be formed from a material unknown to UNSC science. Features a built-in optic that is awkward for human usage but extremely stable in Covenant hands. First confirmed samples were recovered only recently."
+
+STR_PLASMA_GRENADE_UFOPEDIA: "The standard Covenant grenade. Clings to most surfaces, including armor and personnel, once armed. Emits a brief energy vent before releasing a concentrated plasma burst with devastating force. UNSC technicians have not yet identified how the arming mechanism distinguishes friend from foe."
+
+STR_FUEL_ROD_GUN_UFOPEDIA: "A heavy launcher firing volatile radioactive rods of incendiary gel. Impact produces a large blast of chemical and energy-based effects. Users can lob shots in a parabolic arc, making them dangerous even behind cover. Due to extreme radiation levels, handling captured rods is discouraged."
+
+STR_ENERGY_SWORD_UFOPEDIA: "A melee weapon associated with Elite leadership and honor roles. Generates two magnetically confined plasma blades from a compact hilt. The weapon consumes energy with each strike; spent cells can be replaced but are unstable outside the hilt. Extremely dangerous in close quarters."
+
+STR_JACKAL_SHIELD_GAUNTLET_UFOPEDIA: "Mounted on Jackal forearms, these generate a directional energy barrier capable of absorbing significant projectile fire. Shields vary by color and apparent strength. Overload causes temporary collapse of the field, exposing the user. The principles behind the linear energy field are still poorly understood."
+
+STR_NEEDLE_RIFLE_UFOPEDIA: "Long-range variant of the Needler. Fires elongated crystalline projectiles that maintain stability and velocity across distance. Lacks the rapid close-range saturation of the standard Needler but offers exceptional accuracy. Ammunition canisters decay rapidly once removed."
+
+STR_PLASMA_GHOST_CANNON_UFOPEDIA: "Mounted in pairs on Covenant 'Ghost' vehicles. Produces high-speed plasma bolts suited for anti-infantry engagements. Very few intact units have been recovered due to self-destruct mechanisms, limiting UNSC understanding of their internal systems."
+
   STR_SPRINT_ITEM: "Sprint"
   STR_CAMO_ITEM: "Active Camouflage"
   STR_DROP_SHIELD_ITEM: "Drop Shield"
