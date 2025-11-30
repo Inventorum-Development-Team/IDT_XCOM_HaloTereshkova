@@ -247,28 +247,37 @@ en-US:
   STR_H165_ORBITAL_STRIKE_UFOPEDIA: "A compact laser designator used to call in orbitally launched missiles from a UNSC warship. Well worth the resource commitment."
   STR_M41: "M41 SPNKr Rocket Launcher"
   STR_M41_ROCKETS: "Disposable 102mm Rocket Tube"
-  STR_M41_UFOPEDIA: "The M41 SPNKr is characterized by its two main components: firstly, a reusable launcher that opens and closes with a hinge mechanism, which encircles most of the magazine; secondly, a disposable magazine containing two rockets. Nicknames for the M41 SPNKr include Pain, Launcher, Breath of God, and Can Opener."
-  STR_M6C: M6C PDWS
-  STR_M6C_UFOPEDIA: "Marine Corps' variant of the M6 PDWS, sporting a higher fire rate and velocity, using SAP-HP instead of SAP-HE." 
-  STR_M6C_SOCOM: M6C/SOCOM
-  STR_M6C_SOCOM_UFOPEDIA: "Variant with an integrated suppressor, muzzle brake and a 4x SMARTLINK scope. Typically issued to Spec-Ops units like ODSTs."
-  STR_M6C_MAG: .50 SAP-HP M6C Magazine
-  STR_M6G: M6G Magnum
-  STR_M6G_UFOPEDIA: "2546 model, variant of the M6 used by the UNSC Army. Outfitted with a 2x scope and a laser attachment. Fires high caliber High Explosive, Semi-Armor Piercing rounds."
+  STR_M41_UFOPEDIA: "A durable, dual-tube rocket launcher long used by UNSC forces. Its hinge-frame body accepts a disposable two-round magazine, allowing quick reloads and dependable anti-armor performance. Nicknames include Pain, Can Opener, and Breath of God."
+
+  STR_M6C: "M6C PDWS"
+  TR_M6C_UFOPEDIA: "A compact M6-series sidearm favored by frontline units for its fast handling and high rate of fire. The M6C trades some stopping power for quicker follow-up shots, firing SAP-HP ammunition suited for close-quarters engagements."
+
+  STR_M6C_SOCOM: "M6C/SOCOM"
+  STR_M6C_SOCOM_UFOPEDIA: "A tuned variant of the M6C fitted with an integrated suppressor, muzzle brake, and a 4x SMARTLINK optic. Designed for precision and stealth, it is commonly issued to ODSTs and other special operations units."
+  STR_M6C_MAG: ".50 SAP-HP M6C Magazine"
+
+  STR_M6G: "M6G Magnum"
+  STR_M6G_UFOPEDIA: "A heavy-frame magnum used widely by Army units. Its reinforced slide, 2x optic, and laser module make it accurate beyond standard sidearm ranges. Chambered in 12.7x40mm SAP-HE, it offers high penetration and reliable stopping power."
   STR_M6G_MAG: "12.7x40 SAP-HE M6G Magazine"
-  STR_M6V: M6/V Spartan Laser
-  STR_M6V_UFOPEDIA: "The Weapon/Anti-Vehicle Model 6/V Grindell/Galilean Nonlinear Rifle is an exorbitantly expensive weapon that is all but guaranteed to take out anything it hits with a solid state laser."
-  STR_M7: M7 SMG
-  STR_M7_UFOPEDIA: "Fully automatic, compact firearm firing caseless Full Metal Jacket munitions at 900 RPM from a 60-round magazine. "
-  STR_M7S: M7S SMG
-  STR_M7S_UFOPEDIA: "Variant of the M7 Caseless SMG attached with an M49 suppressor, flashlight, and SLS/V 5B smart scope, issued to Spec-Ops units."
-  STR_M7_MAG: 5x23mm SMG Magazine
-  STR_M45_SHOTGUN: M45 Tactical Shotgun
-  STR_M45_SHOTGUN_UFOPEDIA: "CQC firearm used for boarding action and urban combat. Has a dual-tubular, 6-shot magazine chambered in 8 gauge magnum. The pellets feature a thighter spread and harder impact than other shotgun models."
-  STR_M90_SHOTGUN: M90 CAWS
-  STR_M90_SHOTGUN_UFOPEDIA: "A functionally identical and cheaper clone of the M45E model. Fires up to 12 shots of 8 gauge magnum. A larger pellet spread helps to clean larger groups of enemies."  
-  STR_8GAUGE_SHELLS: M45 8-Gauge Shotgun Speedloader
-  STR_M90_8GAUGE_SHELLS: M90 8-Gauge Shotgun Speedloader
+
+  STR_M6V: "M6/V Spartan Laser"
+  STR_M6V_UFOPEDIA: "The Weapon/Anti-Vehicle Model 6/V is a directed-energy weapon built for precision armor destruction. Its solid-state laser delivers a concentrated beam capable of disabling vehicles and fortified targets with a single, well-timed charge. Extremely costly and rarely issued outside specialized units."
+
+  STR_M7: "M7 SMG"
+  STR_M7_UFOPEDIA: "A compact, fully automatic caseless submachine gun firing 5x23mm rounds at a high cyclic rate. Lightweight and easy to control in close quarters, the M7 offers exceptional volume of fire from its 60-round magazine."
+
+  STR_M7S: "M7S SMG"
+   TR_M7S_UFOPEDIA: "A suppressed variant of the M7 fitted with the M49 sound moderator, a tactical light, and an SLS/V 5B smart-link scope. Optimized for stealth and precision in confined spaces, it is commonly issued to reconnaissance and special operations units."
+  STR_M7_MAG: "5x23mm SMG Magazine"
+
+  STR_M45_SHOTGUN: "M45 Tactical Shotgun"
+  STR_M45_SHOTGUN_UFOPEDIA: "A close-quarters shotgun used in boarding actions and urban combat. Its dual-tube 8-gauge magazine offers six powerful shots with a tight pellet spread, making it highly effective against armored infantry at short range."
+
+  STR_M90_SHOTGUN: "M90 CAWS"
+   TR_M90_SHOTGUN_UFOPEDIA: "A simplified, lower-cost combat shotgun inspired by the M45E pattern. Features a larger ammunition reserve and a wider pellet spread, trading precision for increased hit probability against clustered targets."
+  STR_8GAUGE_SHELLS: "M45 8-Gauge Shotgun Speedloader"
+  STR_M90_8GAUGE_SHELLS: "M90 8-Gauge Shotgun Speedloader"
+
   STR_M319: M319 Grenade Launcher
   STR_M319_GRENADE: 40mm Grenade
   STR_M319_UFOPEDIA: "A single-shot, break-action explosives launcher produced by Misriah Armory. Although it is less effective against energy shielded Covenant foes, it can be used to deadly effect against unshielded targets."
