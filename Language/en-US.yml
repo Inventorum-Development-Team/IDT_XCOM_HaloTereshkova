@@ -300,19 +300,18 @@ en-US:
   STR_M392_MAG: "7.62x51mm DMR Magazine"
 
   STR_SRS99: "SRS99-AM Sniper Rifle"
-  STR_SRS99_UFOPEDIA: "A semi-automatic anti-materiel sniper rifle fitted with an ORACLE N-Variant scope. Chambered in 14.5x114mm HVAP or APFSDS, it offers tremendous penetration—operators are cautioned about severe overpenetration risks."
+  STR_SRS99_UFOPEDIA: "A semi-automatic anti-materiel sniper rifle fitted with an ORACLE N-Variant scope. Chambered in 14.5x114mm HVAP or APFSDS, it offers tremendous penetration. Operators are cautioned about severe overpenetration risks."
   STR_SRS99_MAG: "14.5x114mm SRS99 Magazine"
 
   STR_MA37: "MA37 ICWS"
   STR_MA37_UFOPEDIA: "A stripped-down, durable precursor to the MA5 line with over a century of service. Its simplified frame, flash hider, and modular external electronics suite make it easy to maintain. Uses M118 FMJ ammunition."
 
-   TR_MA5K: "MA5K Carbine"
+  STR_MA5K: "MA5K Carbine"
   STR_MA5K_UFOPEDIA: "A compact carbine variant of the MA5 platform, designed for mobility and close-quarters work. Often issued to special units (most notably Spartans) after removing the electronics housing and replacing it with a lightweight carry handle. Shares magazines with the MA37."
   STR_MA37_MAG: "7.62x51mm MA37 Magazine"
 
   STR_MA5B: "MA5B Assault Rifle"
   STR_MA5B_UFOPEDIA: "A heavier, more electronics-rich evolution of the MA37, widely used by the Marine Corps. Features an integrated flashlight, reinforced internal systems, and a high-capacity 60-round magazine. The larger magazine size is appreciated in boarding actions and close-quarters combat."
-
   STR_MA5B_MAG: "7.62x51mm MA5B Magazine"
 
   STR_VK78_COMMANDO_RIFLE: "VK78 Commando DMR"
@@ -325,8 +324,19 @@ en-US:
 
   STR_CM300_FRONTIER_CARBINE: "CM300 Frontier Carbine"
   STR_CM300_FRONTIER_CARBINE_UFOPEDIA: "A high-rate-of-fire carbine derived from the MA3 series, nicknamed 'The Confetti Maker' for its blistering cyclic rate. Mass-produced across frontier colonies and widely copied on the black market, it became a hallmark weapon of Insurrectionist cells. Adapted to accept MA5B magazines."
-
   
+  STR_M73_LMG: "M73 Light Machine Gun"
+  STR_M73_LMG_AMMO: "6.5x48mm M73 LMG Belt"
+  STR_M73_LMG_UFOPEDIA: "A general-purpose machine gun widely, sister development of the VK87. Belt-fed and air-cooled, the M73 provides sustained suppressive fire with reliable performance under extreme field conditions. Its accuracy at range is moderate, but its high rate of fire and rugged construction make it a dependable squad support weapon."
+
+  STR_SR99_STANCHION: "SR-99 Stanchion Gauss Rifle"
+  STR_SR99_STANCHION_AMMO: "8.0x60mm Saboted Flechette"
+  STR_SR99_STANCHION_UFOPEDIA: "A long-range anti-materiel rifle firing ferric flechettes accelerated by magnetic induction rails. The Stanchion delivers extreme muzzle velocity, enabling high-precision interdiction against light vehicles, emplacements, and targets behind partial cover. Its complex magnetic coils require careful maintenance and limit battlefield availability."
+
+  STR_ARC70_RAILGUN: "ARC-70 Railgun"
+  STR_ARC70_RAILGUN_AMMO: "Superdense Kinetic Slugs"
+  STR_ARC70_RAILGUN_UFOPEDIA: "A compact electromagnetic launcher designed for mobile anti-armor roles. The ARC-70 propels dense slugs at hypervelocity, capable of breaching fortified plating or disabling vehicle systems with a single impact. Its power-cycle constraints restrict rate of fire, but each shot offers exceptional penetrative capability. This is a very early prototype and its full deployment is scheduled to require at least a full decade."
+
   STR_TYPE_25_PLASMA_PISTOL: "Type-25 Pistol"
   STR_PLASMA_PISTOL_CELL: "Type-25 Pistol Battery"
   STR_PLASMA_RIFLE_ELITE: "Type-25 Plasma Rifle/Elite-pattern"
@@ -334,13 +344,13 @@ en-US:
   STR_PLASMA_RIFLE_BRUTE_CELL: "Type-25 Rifle Battery/Brute"
   STR_PLASMA_RIFLE_CELL: "Type-25 Rifle Battery/Elite"
 
-  STR_PLASMA_REPEATER: "Type-51 Plasma Repeater"
-  STR_PLASMA_REPEATER_CELL: "Type-51 Repeater Battery"
+  STR_PLASMA_REPEATER: "Type-1 Plasma Repeater"
+  STR_PLASMA_REPEATER_CELL: "Type-1 Repeater Battery"
 
   STR_NEEDLER: "Type-33 'Needler' GLM"
   STR_NEEDLER_CANISTER: "Type-33 'Needler' Canister"
 
-  STR_PLASMA_CARBINE: "Type-51 Carbine"
+  STR_PLASMA_CARBINE: "Type-1 Carbine"
   STR_PLASMA_CARBINE_MAG: "8.7x60mm Caseless Carbine Magazine"
 
   STR_PLASMA_GRENADE: "Type-1 Antipersonnel 'Plasma' Grenade"
@@ -375,11 +385,27 @@ en-US:
 
   STR_ENERGY_SWORD_UFOPEDIA: "A melee weapon associated with Elite leadership and honor roles. Generates two magnetically confined plasma blades from a compact hilt. The weapon consumes energy with each strike; spent cells can be replaced but are unstable outside the hilt. Extremely dangerous in close quarters."
 
-  STR_JACKAL_SHIELD_GAUNTLET_UFOPEDIA: "Mounted on Jackal forearms, these generate a directional energy barrier capable of absorbing significant projectile fire. Shields vary by color and apparent strength. Overload causes temporary collapse of the field, exposing the user. The principles behind the linear energy field are still poorly understood, but it remains a very important topic and there's reports of several research centers devoting to understanding it."
+  STR_JACKAL_SHIELD_GAUNTLET_UFOPEDIA: "Mounted on Jackal forearms, these generate a directional energy barrier capable of absorbing significant projectile fire. Shields vary by color and apparent strength. Overload causes temporary collapse of the field, exposing the user. The principles behind the linear energy field are still poorly understood, but it remains a very important topic and there are reports of several research centers devoting time and efforts to understanding it."
 
   STR_NEEDLE_RIFLE_UFOPEDIA: "Long-range variant of the Needler. Fires elongated crystalline projectiles that maintain stability and velocity across distance. Lacks the rapid close-range saturation of the standard Needler but offers exceptional accuracy. Ammunition canisters decay rapidly once removed."
 
   STR_PLASMA_GHOST_CANNON_UFOPEDIA: "Mounted in pairs on Covenant 'Ghost' vehicles. Produces high-speed plasma bolts suited for anti-infantry engagements. Very few intact units have been recovered due to self-destruct mechanisms, limiting UNSC understanding of their internal systems."
+  
+  STR_MAULER: "Type-37 Mauler Shotgun"
+  STR_MAULER_AMMO: "Type-37 Mauler Cylinder"
+  STR_MAULER_UFOPEDIA: "This compact Brute sidearm functions as a handheld scatter-weapon firing volatile metal fragments. UNSC analysis suggests it uses a micro-forged explosive charge to propel the shot, giving it characteristics similar to a cross between a shotgun and a pneumatic spike driver. The weapon’s compact size and heavy recoil imply it is designed for close-quarters dominance. Human testers reported severe wrist stress even when firing reduced loads. Its internal mechanisms remain poorly understood due to self-corroding components that degrade after battlefield use."
+
+  STR_SPIKER: "Type-25 Spiker"
+  STR_SPIKER_AMMO: "Type-25 Spiker Magazine"
+  STR_SPIKER_UFOPEDIA: "This dual-bladed projectile weapon appears engineered for intimidation as much as performance. It launches high-mass metal spikes using a chemical or compressed-energy propellant system yet to be fully identified. Brutes favor it at short to medium range, where its spikes retain significant penetrating power. Captured units show varying craftsmanship, suggesting clan-based manufacturing differences. UNSC engineers note that the weapon's exposed heatsinks and redundant plating seem intentionally overbuilt, possibly reflecting Brute cultural preferences rather than tactical necessity."
+
+  STR_BRUTE_SHOT: "Type-25 Brute Shot GL"
+  STR_BRUTE_SHOT_AMMO: "Type-25 Brute Shot Belt"
+  STR_BRUTE_SHOT_UFOPEDIA: "A heavy launcher wielded with ease only by Brutes. It fires explosive canisters that detonate on impact, with fragments often causing significant secondary injuries. The curved bayonet at the muzzle indicates that the weapon also doubles as a brutal melee implement. UNSC analysts believe the launcher operates on a hybrid propellant system that accelerates the projectile before triggering its charge. Recovered ammunition is unstable, and several containment accidents have occurred during study. The Brute Shot’s true effective range and deployment doctrines remain speculative."
+
+  STR_TYPE_50_SKEWER:
+  STR_TYPE_50_SKEWER_UFOPEDIA: "A massive anti-material rifle used exclusively by high-ranking Brutes. Only a handful of examples have been recovered. The weapon fires a single oversized metallic harpoon with extreme kinetic force, capable of piercing light vehicles and power armor. Despite its size, Brutes appear capable of cycling and firing it rapidly. UNSC R&D believes the Skewer relies on a magneto-accelerated launch system, though measurements are inconclusive due to energy bleedoff and shielding integrated into its frame. The weapon’s sophistication contrasts sharply with typical Brute armaments, raising questions about its origin within the Covenant supply chain."
+
 
   STR_SPRINT_ITEM: "Sprint"
   STR_CAMO_ITEM: "Active Camouflage"
@@ -640,6 +666,19 @@ STR_HUNTER_AUTOPSY: "The specimen, composed of hundreds of Lekgolo worm-like org
 STR_DRONE_AUTOPSY: "The subject demonstrates insectoid physiology with lightweight chitin plating and a flight musculature system dominating the torso. The wings are powered by dual rotary tendon structures that allow sustained aerial maneuvering. Visual organs are compound and highly sensitive to motion, giving them an advantage in close-range engagements. Their digestive system is simple and adapted to high-sugar nutrient gels. Despite fragile bodies, their aerial agility compensates for their low durability."
 
 STR_ENGINEER_AUTOPSY: "The specimen, restrained and euthanized following strict biohazard protocols, shows a soft-bodied, gas-filled structure reliant on a complex network of buoyancy bladders. Internal tissues are dense with neural pathways, suggesting remarkable computational capabilities. Numerous manipulators contain micro-scale sensory pads and field-projector glands. Evidence indicates extreme biochemical sensitivity to stress; the species is likely not intended for frontline combat. The body contains embedded nanoscopic machines of unknown origin, possibly linked to their technical proficiency."
+
+#####################
+STR_TERESHKOVA_BACKGROUND: "Colonial Knowledge: Background"
+STR_TERESHKOVA_BACKGROUND_UFOPEDIA:"Tereshkova was settled in the late 25th century by a fleet of small colonial ships from all corners of Earth. The CAA M. Thatch landed on what is known today as Rourke's Rift, and established the first settlement and planetary capital, Cherenkov. The CAA Volga, CAA Felipe Ángeles, CAA Frederich von Ludenthal, and the CMA Bannockburn deployed their settlements across the planet. From that fateful day, March 18th, 2472"
+
+STR_TERESHKOVA_BACKGROUND:
+STR_TERESHKOVA_BACKGROUND_UFOPEDIA: "Tereshkova was settled in the late 25th century by a fleet of small colonial ships from all corners of Earth. The CAA M. Thatch landed on what is known today as Rourke's Rift, establishing the first settlement and future planetary capital, Cherenkov. The CAA Volga, CAA Felipe Ángeles, CAA Frederich von Ludenthal, and the CMA Bannockburn deployed their own settlements across the world. From that fateful day, March 18th, 2485, the planet officially became a colony. Tereshkova is characterized by wide temperate belts, rich mineral veins, and calm oceanic weather patterns that made it ideal for early civilian expansion. By the end of its first decade, it had become one of the fastest-growing frontier worlds in the sector."
+
+STR_TERESHKOVA_ECONOMY:
+STR_TERESHKOVA_ECONOMY_UFOPEDIA: "Owing to its stable biosphere and abundant natural resources, Tereshkova quickly transitioned from a frontier outpost into a key industrial hub. The planet’s economy developed around three pillars: heavy manufacturing, orbital shipyard support, and high-yield mineral extraction. Cherenkov’s fabrication districts became renowned for producing modular infrastructure kits used in dozens of nearby colonies. The settlements founded by the Volga and Felipe Ángeles missions specialized in agricultural exports and provided the bulk of the planet’s food surplus. Meanwhile, Bannockburn’s landing site expanded into a sprawling mining network crucial for supplying titanium, tungsten, and rare isotopes to UNSC depots. By 2530, Tereshkova was considered economically self-sufficient and strategically valuable for regional logistics."
+
+STR_TERESHKOVA_HISTORY:
+STR_TERESHKOVA_HISTORY_UFOPEDIA: "Despite its prosperity, Tereshkova experienced its share of turbulence. Early disputes between CAA and CMA charter groups delayed planetary unification for almost a decade, culminating in the Cherenkov Accords of 2494—an agreement that formally defined shared governance and inter-settlement autonomy. During the Insurrectionist uprisings of the 2510s, the planet remained mostly neutral, protected by its distance from major flashpoints and the overwhelming presence of local civilian militias. The discovery of anomalous geologic formations in the southern continent in 2528 sparked brief academic controversy, but the findings were deemed inconclusive and archived. As of 2537, Tereshkova is recognized as an important industrial world, widely considered stable and secure—at least until the Covenant invasion shattered that assumption."
 
   
 #####################
