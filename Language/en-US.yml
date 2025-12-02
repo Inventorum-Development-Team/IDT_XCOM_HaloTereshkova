@@ -339,7 +339,7 @@ en-US:
   
   STR_M73_LMG: "M73 Light Machine Gun"
   STR_M73_LMG_AMMO: "6.5x48mm M73 LMG Belt"
-  STR_M73_LMG_UFOPEDIA: "A general-purpose machine gun widely, sister development of the VK87. Belt-fed and air-cooled, the M73 provides sustained suppressive fire with reliable performance under extreme field conditions. Its accuracy at range is moderate, but its high rate of fire and rugged construction make it a dependable squad support weapon."
+  STR_M73_LMG_UFOPEDIA: "A general-purpose machine gun widely used with great effectiveness during the Insurrection, sister development of the VK87. Belt-fed and air-cooled, the M73 provides sustained suppressive fire with reliable performance under extreme field conditions. Its accuracy at range is moderate, but its high rate of fire and rugged construction make it a dependable squad support weapon."
 
   STR_SR99_STANCHION: "SR-99 Stanchion Gauss Rifle"
   STR_SR99_STANCHION_AMMO: "8.0x60mm Saboted Flechette"
@@ -347,7 +347,7 @@ en-US:
 
   STR_ARC70_RAILGUN: "ARC-70 Railgun"
   STR_ARC70_RAILGUN_AMMO: "Superdense Kinetic Slugs"
-  STR_ARC70_RAILGUN_UFOPEDIA: "A compact electromagnetic launcher designed for mobile anti-armor roles. The ARC-70 propels dense slugs at hypervelocity, capable of breaching fortified plating or disabling vehicle systems with a single impact. Its power-cycle constraints restrict rate of fire, but each shot offers exceptional penetrative capability. This is a very early prototype and its full deployment is scheduled to require at least a full decade."
+  STR_ARC70_RAILGUN_UFOPEDIA: "A compact electromagnetic launcher designed for mobile anti-armor roles. The ARC-70 propels dense slugs at hypervelocity, capable of breaching fortified plating or disabling vehicle systems with a single impact. Its power-cycle constraints restrict rate of fire, but each shot offers exceptional penetrative capability. This is a very early prototype and its full deployment is scheduled to require at least a full decade.{NEWLINE} > Skunkworks classification: {ALT}//LEVEL 5\\. Not for general field issue.{ALT}"
 
   STR_TYPE_25_PLASMA_PISTOL: "Type-25 Pistol"
   STR_PLASMA_PISTOL_CELL: "Type-25 Pistol Battery"
