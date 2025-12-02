@@ -43,13 +43,25 @@ en-US:
   STR_SABRE_FIGHTER: "Sabre Spacefighter"
   STR_SABRE_FIGHTER_UFOPEDIA: "YSS-1000. Prototype space fighter, intended for defense of the Inner Colonies. It is the first UNSC ship to incorporate active energy shields. Fast, agile and powerful."
   STR_LONGSWORD_FIGHTER: "Longsword Interceptor"
-  STR_LONGSWORD_FIGHTER_UFOPEDIA: "GA-TL1/C709. UNSC line interceptor. Fulfills a huge number of roles, from orbital intercept to capital ship escort and close support."
+  STR_LONGSWORD_FIGHTER_UFOPEDIA: "GA-TL1/C712. UNSC Air Force heavy anti-ship interceptor. This variant is focused on close combat, being faster and more aggressive than others, but having lighter armor."
   STR_PELICAN_DROPSHIP: "Pelican Dropship"
   STR_PELICAN_DROPSHIP_UFOPEDIA: "D77-TC. Standard transport ship of all UNSC branches. It is equipped with heavy armor and has orbital flight capability. It can carry a large number of troops and a light vehicle."
   STR_FALCON_DROPSHIP: "Falcon VTOL"
   STR_FALCON_DROPSHIP_UFOPEDIA: "UH-144A. Variant of the Falcon focused on transporting infantry quickly and unobtrusively. Only possesses a 70mm machine gun for self-defense."
   STR_FALCON_GUNSHIP: "Falcon Gunship"
   STR_FALCON_GUNSHIP_UFOPEDIA: "AH-144S. Better armed version of the Falcon, mostly employed by the Army. Features another gun turret and additional armor on engines and cockpit."
+  STR_FALCATA_FIGHTER: "Falcata Fighter"
+  STR_FALCATA_FIGHTER_UFOPEDIA: "F-23. A heavy atmospheric fighter dating back to the height of the Insurrection. Most were retired decades ago, but frontier colonies like Tereshkova still rely on it due to limited procurement options. Though outdated, it remains serviceable for low-intensity patrols and emergency defense."
+  STR_WOMBAT_UCAV: "Wombat UCAV"
+  STR_WOMBAT_UCAV_UFOPEDIA: "F-99. Autonomous strike drone operated in coordinated pairs. It has limited onboard decision architecture, relying heavily on local command uplinks. While dependable and inexpensive, its EW suite struggles against focused signal jamming disruptions, restricting its operational flexibility."
+  STR_BASELARD_FIGHTER: "Baselard Fighter"
+  STR_BASELARD_FIGHTER_UFOPEDIA: "S-14. A lightweight, rapid-response aerospace fighter designed for short-range defense of colony space. The Baselard’s high thrust-to-weight ratio allows quick intercepts but limits payload options."
+  STR_SHORTSWORD_BOMBER: "Shortsword Bomber"
+  STR_SHORTSWORD_BOMBER_UFOPEDIA: "B-65. A suborbital strategic bomber, adapted for precision attack missions. It carries guided munitions, anti-ship missiles, and penetration warheads for hardened targets. Its armor is rated for atmospheric combat only, making it highly vulnerable to anti-aircraft energy weapons."
+  STR_NANDAO_FIGHTER: "Nandao Fighter"
+  STR_NANDAO_FIGHTER_UFOPEDIA: "F-29. The premier strike/fighter interceptor deployed across UNSC colonies. It emphasizes acceleration and maneuverability, using variable-cycle engines and limited ECM capabilities. It can reach Mach 12 on most atmospheres."
+  STR_BROADSWORD_FIGHTER: "Broadsword Fighter"
+  STR_BROADSWORD_FIGHTER_UFOPEDIA: "F-41D. The heaviest space-optimized interceptor developed for orbital defense and fleet support. It features robust engines, dorsal missile racks, and improved sensor suites. Designed to challenge fast-moving threats, it's expect to become the mainstream defensive craft in the next 20 years."
 ######################
   STR_CRAFT_WEAPONS: "CRAFT WEAPONS"
   STR_MAC_UC: "MAC"
@@ -403,8 +415,9 @@ en-US:
   STR_BRUTE_SHOT_AMMO: "Type-25 Brute Shot Belt"
   STR_BRUTE_SHOT_UFOPEDIA: "A heavy launcher wielded with ease only by Brutes. It fires explosive canisters that detonate on impact, with fragments often causing significant secondary injuries. The curved bayonet at the muzzle indicates that the weapon also doubles as a brutal melee implement. UNSC analysts believe the launcher operates on a hybrid propellant system that accelerates the projectile before triggering its charge. Recovered ammunition is unstable, and several containment accidents have occurred during study. The Brute Shot’s true effective range and deployment doctrines remain speculative."
 
-  STR_TYPE_50_SKEWER:
-  STR_TYPE_50_SKEWER_UFOPEDIA: "A massive anti-material rifle used exclusively by high-ranking Brutes. Only a handful of examples have been recovered. The weapon fires a single oversized metallic harpoon with extreme kinetic force, capable of piercing light vehicles and power armor. Despite its size, Brutes appear capable of cycling and firing it rapidly. UNSC R&D believes the Skewer relies on a magneto-accelerated launch system, though measurements are inconclusive due to energy bleedoff and shielding integrated into its frame. The weapon’s sophistication contrasts sharply with typical Brute armaments, raising questions about its origin within the Covenant supply chain."
+  STR_SKEWER: "Type-37 Skewer"
+  STR_SKEWER_AMMO: "Skewer Solid Rod"
+  STR_SKEWER_UFOPEDIA: "A massive anti-material rifle used exclusively by high-ranking Brutes, basically an oversized Spiker. Only a handful of examples have been recovered. The weapon fires a single oversized metallic harpoon with extreme kinetic force, capable of piercing light vehicles and power armor. Despite its size, Brutes appear capable of cycling and firing it rapidly. UNSC R&D believes the Skewer relies on a magneto-accelerated launch system, though measurements are inconclusive due to energy bleedoff and shielding integrated into its frame. The weapon’s sophistication contrasts sharply with typical Brute armaments, raising questions about its origin within the Covenant supply chain."
 
 
   STR_SPRINT_ITEM: "Sprint"
