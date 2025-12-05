@@ -1,6 +1,12 @@
-name: "New Globe"
-version: 1.0
-description: "New globe!"
-author: "efrenespartano"
-id: "newglobe"
-master: "xcom1"
+name: "Halo: Defense of Tereshkova"
+version: "0.1"
+author: "Inventorum Development Team"
+description: "2537. Defend our homeland."
+id: Halo_Mod_Tereshkova
+isMaster: true
+master: xcom1
+loadResources:
+  - UFO
+reservedSpace: 5
+requiredExtendedVersion: "7.9.8"
+resourceConfig: transparency.rul
