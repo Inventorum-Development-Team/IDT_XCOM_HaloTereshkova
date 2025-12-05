@@ -1,8 +1,4 @@
-extraSprites:
-  - type: TEXTURE.DAT
-    width: 416
-    height: 96
-    subX: 32
-    subY: 32
-    files:
-      0: Resources/Globe/TERESHKOVA_TEXTURES.png
+research:
+  - name: STR_LASER_WEAPONS
+    cost: 50
+    points: 10
