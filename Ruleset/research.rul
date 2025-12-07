@@ -2,3 +2,207 @@ research:
   - name: STR_LASER_WEAPONS
     cost: 50
     points: 10
+  - name: STR_INNIE_OFFICER_INTERROGATION
+    cost: 50
+    points: 20
+    dependencies:
+      - STR_ALIEN_CONTAINMENT
+    unlocks:
+      - STR_INNIE_INTEL_UNUSUAL_ACTIVITY
+      - STR_HEAVY_WEAPON_REQUEST
+
+  - name: STR_INNIE_INTEL_UNUSUAL_ACTIVITY
+    cost: 80
+    points: 30
+    unlocks:
+      - STR_EARLY_WARNING_ARRAY
+
+  - name: STR_EARLY_WARNING_ARRAY
+    cost: 120
+    points: 40
+    unlocks:
+      - STR_SOS_TO_NAVY
+
+  - name: STR_ELITE_ULTRA_INTERROGATION
+    cost: 160
+    points: 50
+    dependencies:
+      - STR_ALIEN_CONTAINMENT
+    unlocks:
+      - STR_SOS_TO_NAVY
+
+  - name: STR_SOS_TO_NAVY
+    cost: 200
+    points: 60
+    dependencies:
+      - STR_INNIE_INTEL_UNUSUAL_ACTIVITY
+      - STR_ELITE_ULTRA_INTERROGATION
+    unlocks:
+      - STR_REQUEST_FOR_REINFORCEMENTS
+
+  - name: STR_HEAVY_WEAPON_REQUEST
+    cost: 100
+    points: 30
+    unlocks:
+      - STR_M41_SPNKR_RESEARCH
+      - STR_SR90_STANCHION_RESEARCH
+
+  - name: STR_M41_SPNKR_RESEARCH
+    cost: 160
+    points: 50
+    dependencies:
+      - STR_HEAVY_WEAPON_REQUEST
+
+  - name: STR_SR90_STANCHION_RESEARCH
+    cost: 200
+    points: 60
+    dependencies:
+      - STR_HEAVY_WEAPON_REQUEST
+
+  - name: STR_REQUEST_FOR_REINFORCEMENTS
+    cost: 125
+    points: 40
+    unlocks:
+      - STR_BRANCH_ARMY
+      - STR_BRANCH_MARINES
+      - STR_ONI_SUPPORT
+    dependencies:
+      - STR_SOS_TO_NAVY
+
+  - name: STR_BRANCH_ARMY
+    cost: 200
+    points: 60
+    dependencies:
+      - STR_REQUEST_FOR_REINFORCEMENTS
+    unlocks:
+      - STR_MA37_RESEARCH
+      - STR_M392_DMR_RESEARCH
+      - STR_M45_SHOTGUN_RESEARCH
+      - STR_M6G_PISTOL_RESEARCH
+      - STR_M319_RESEARCH
+      - STR_ARMY_TROOPS
+
+  - name: STR_MA37_RESEARCH
+    cost: 15
+    points: 20
+    dependencies:
+      - STR_BRANCH_ARMY
+
+  - name: STR_M392_DMR_RESEARCH
+    cost: 15
+    points: 25
+    dependencies:
+      - STR_BRANCH_ARMY
+
+  - name: STR_M45_SHOTGUN_RESEARCH
+    cost: 30
+    points: 25
+    dependencies:
+      - STR_BRANCH_ARMY
+
+  - name: STR_M6G_PISTOL_RESEARCH
+    cost: 25
+    points: 15
+    dependencies:
+      - STR_BRANCH_ARMY
+
+  - name: STR_M319_RESEARCH
+    cost: 50
+    points: 30
+    dependencies:
+      - STR_BRANCH_ARMY
+
+  - name: STR_ARMY_TROOPS
+    cost: 150
+    points: 50
+    dependencies:
+      - STR_BRANCH_ARMY
+
+  - name: STR_BRANCH_MARINES
+    cost: 200
+    points: 60
+    dependencies:
+      - STR_REQUEST_FOR_REINFORCEMENTS
+    unlocks:
+      - STR_MA5B_RESEARCH
+      - STR_BR55_RESEARCH
+      - STR_M90_SHOTGUN_RESEARCH
+      - STR_M7_SMG_RESEARCH
+      - STR_MARINE_BODY_ARMOR
+      - STR_MARINE_TROOPS
+
+  - name: STR_MA5B_RESEARCH
+    cost: 90
+    points: 20
+
+  - name: STR_BR55_RESEARCH
+    cost: 120
+    points: 30
+
+  - name: STR_M90_SHOTGUN_RESEARCH
+    cost: 90
+    points: 20
+
+  - name: STR_M7_SMG_RESEARCH
+    cost: 60
+    points: 15
+
+  - name: STR_MARINE_TROOPS
+    cost: 150
+    points: 50
+
+  - name: STR_ONI_SUPPORT
+    cost: 140
+    points: 50
+    unlocks:
+      - STR_SPARTAN_THREE_ARRIVAL
+      - STR_ONI_SKUNKWORKS
+
+  - name: STR_SPARTAN_THREE_ARRIVAL
+    cost: 200
+    points: 80
+
+  - name: STR_ONI_SKUNKWORKS
+    cost: 300
+    points: 100
+    unlocks:
+      - STR_ARC90_RESEARCH
+
+  - name: STR_ARC90_RESEARCH
+    cost: 350
+    points: 120
+
+  - name: STR_ELITE_ZEALOT_INTERROGATION
+    cost: 200
+    points: 60
+    unlocks:
+      - STR_ARTIFACT_HUNT
+
+  - name: STR_ARTIFACT_HUNT
+    cost: 350
+    points: 120
+    unlocks:
+      - STR_ARTIFACT_SITE_MAPPING
+
+  - name: STR_ELITE_GENERAL_INTERROGATION
+    cost: 260
+    points: 80
+    unlocks:
+      - STR_SUPERCRUISER_INTEL
+
+  - name: STR_SUPERCRUISER_INTEL
+    cost: 400
+    points: 130
+    unlocks:
+      - STR_OPERATION_GUILLOTINE
+
+  - name: STR_ARTIFACT_SITE_MAPPING
+    cost: 300
+    points: 100
+    unlocks:
+      - STR_OPERATION_GUILLOTINE
+
+  - name: STR_OPERATION_GUILLOTINE
+    cost: 500
+    points: 200
+    
