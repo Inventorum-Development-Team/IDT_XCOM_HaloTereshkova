@@ -132,24 +132,34 @@ research:
       - STR_MARINE_TROOPS
 
   - name: STR_MA5B_RESEARCH
-    cost: 90
+    cost: 30
     points: 20
+    dependencies:
+      - STR_BRANCH_MARINES
 
   - name: STR_BR55_RESEARCH
-    cost: 120
+    cost: 40
     points: 30
+    dependencies:
+      - STR_BRANCH_MARINES
 
   - name: STR_M90_SHOTGUN_RESEARCH
-    cost: 90
+    cost: 45
     points: 20
+    dependencies:
+      - STR_BRANCH_MARINES
 
   - name: STR_M7_SMG_RESEARCH
-    cost: 60
+    cost: 20
     points: 15
+    dependencies:
+      - STR_BRANCH_MARINES
 
   - name: STR_MARINE_TROOPS
     cost: 150
     points: 50
+    dependencies:
+      - STR_BRANCH_MARINES
 
   - name: STR_ONI_SUPPORT
     cost: 140
@@ -161,16 +171,22 @@ research:
   - name: STR_SPARTAN_THREE_ARRIVAL
     cost: 200
     points: 80
+    dependencies:
+      - STR_ONI_SUPPORT
 
   - name: STR_ONI_SKUNKWORKS
     cost: 300
     points: 100
+    dependencies:
+      - STR_ONI_SUPPORT
     unlocks:
       - STR_ARC90_RESEARCH
 
   - name: STR_ARC90_RESEARCH
     cost: 350
     points: 120
+    dependencies:
+      - STR_ONI_SKUNKWORKS
 
   - name: STR_ELITE_ZEALOT_INTERROGATION
     cost: 200
@@ -181,6 +197,8 @@ research:
   - name: STR_ARTIFACT_HUNT
     cost: 350
     points: 120
+    dependencies:
+      - STR_ELITE_ZEALOT_INTERROGATION
     unlocks:
       - STR_ARTIFACT_SITE_MAPPING
 
@@ -193,6 +211,8 @@ research:
   - name: STR_SUPERCRUISER_INTEL
     cost: 400
     points: 130
+    dependencies:
+      - STR_ELITE_GENERAL_INTERROGATION
     unlocks:
       - STR_OPERATION_GUILLOTINE
 
