@@ -14,12 +14,16 @@ research:
   - name: STR_INNIE_INTEL_UNUSUAL_ACTIVITY
     cost: 80
     points: 30
+    dependencies:
+      - STR_INNIE_OFFICER_INTERROGATION
     unlocks:
       - STR_EARLY_WARNING_ARRAY
 
   - name: STR_EARLY_WARNING_ARRAY
     cost: 120
     points: 40
+    dependencies:
+      - STR_INNIE_INTEL_UNUSUAL_ACTIVITY
     unlocks:
       - STR_SOS_TO_NAVY
 
@@ -206,9 +210,9 @@ research:
     cost: 260
     points: 80
     unlocks:
-      - STR_SUPERCRUISER_INTEL
+      - STR_CAPITAL_SHIP_INTEL
 
-  - name: STR_SUPERCRUISER_INTEL
+  - name: STR_CAPITAL_SHIP_INTEL
     cost: 400
     points: 130
     dependencies:
@@ -219,10 +223,16 @@ research:
   - name: STR_ARTIFACT_SITE_MAPPING
     cost: 300
     points: 100
+    dependencies:
+      - STR_ONI_SUPPORT
     unlocks:
       - STR_OPERATION_GUILLOTINE
 
   - name: STR_OPERATION_GUILLOTINE
     cost: 500
     points: 200
+    dependencies:
+      - STR_ARTIFACT_SITE_MAPPING
+      - STR_CAPITAL_SHIP_INTEL
+      
     
