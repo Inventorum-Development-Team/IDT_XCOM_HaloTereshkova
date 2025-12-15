@@ -236,22 +236,22 @@ research:
       - STR_CAPITAL_SHIP_INTEL
 
 # Enemies 
-  - name: STR_SECTOID
+  - name: STR_INNIE
     points: 50
     needItem: true
-  - name: STR_SNAKEMAN
+  - name: STR_SANGHEILI
     points: 50
     needItem: true
-  - name: STR_ETHEREAL
+  - name: STR_UNGGOY
     points: 50
     needItem: true
-  - name: STR_MUTON
+  - name: STR_KIGYAR
     points: 50
     needItem: true
-  - name: STR_FLOATER
+  - name: STR_HUMAN_AUTOPSY
     points: 50
     needItem: true
-  - name: STR_CELATID
+  - name: STR_SANGHEILI_AUTOPSY
     points: 50
     needItem: true
   - name: STR_SILACOID
