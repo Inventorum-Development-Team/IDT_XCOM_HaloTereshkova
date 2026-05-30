@@ -10,6 +10,11 @@ missionScripts:
   - delete: superhumanRetaliation
   - delete: recurringTerror
 
+####################################################
+######  PHASE 1: INSURRECTIONIST UPRISING  #########
+####################  MONTHS 1–2  #################
+####################################################
+
   - type: innieLeaderAssassination
     missionWeights:
       0:
@@ -20,6 +25,52 @@ missionScripts:
     startDelay: 7200
     executionOdds: 100
 
+  - type: innieRaids
+    missionWeights:
+      0:
+        STR_INSURGENT_RAID: 100
+    regionWeights:
+      0:
+        STR_REGION_1: 15
+        STR_REGION_2: 15
+        STR_REGION_3: 15
+        STR_REGION_4: 15
+        STR_REGION_5: 15
+        STR_REGION_6: 25
+    firstMonth: 0
+    maxRuns: 5
+    varName: innieRaids
+    startDelay: 4320
+    randomDelay: 5760
+    executionOdds: 100
+    useTable: false
+
+  - type: innieSupplyInterdiction
+    missionWeights:
+      0:
+        STR_INSURGENT_SUPPLY_INTERDICTION: 100
+    regionWeights:
+      0:
+        STR_REGION_1: 10
+        STR_REGION_2: 10
+        STR_REGION_3: 10
+        STR_REGION_4: 10
+        STR_REGION_5: 10
+        STR_REGION_6: 30
+        STR_REGION_7: 10
+        STR_REGION_10: 10
+    firstMonth: 0
+    maxRuns: 2
+    varName: innieSupplyInterdiction
+    startDelay: 10080
+    executionOdds: 100
+    useTable: false
+
+####################################################
+######  PHASE 2: EARLY COVENANT CONTACT  ###########
+####################  MONTHS 3–4  #################
+####################################################
+
   - type: startingRecon
     missionWeights:
       0:
@@ -29,7 +80,7 @@ missionScripts:
         STR_REGION_6: 100
     maxRuns: 1
     varName: startingRecon
-    firstMonth: 0
+    firstMonth: 2
     startDelay: 14400
 
   - type: startingAirSuperiority
@@ -39,22 +90,73 @@ missionScripts:
     regionWeights:
       0:
         STR_REGION_6: 100
-    firstMonth: 0
+    firstMonth: 2
     startDelay: 14400
     randomDelay: 7200
+
+  - type: covenantFirstTerror
+    missionWeights:
+      0:
+        STR_COVENANT_FIRST_CONTACT_TERROR: 100
+    regionWeights:
+      0:
+        STR_REGION_6: 60
+        STR_REGION_5: 20
+        STR_REGION_7: 20
+    firstMonth: 2
+    maxRuns: 1
+    varName: covenantFirstTerror
+    startDelay: 21600
+    randomDelay: 7200
+    executionOdds: 100
+    useTable: false
+
+####################################################
+######  PHASE 3: COVENANT ESCALATION  ##############
+####################  MONTHS 5–6  #################
+####################################################
 
   - type: invasionAirSuperiority
     missionWeights:
       0:
         STR_COVENANT_AIR_SUPERIORITY_2: 100
-    firstMonth: 1
-    startDelay: 21600
+    firstMonth: 4
+    startDelay: 7200
     randomDelay: 7200
 
+  - type: sectorInvasionEarly
+    missionWeights:
+      0:
+        STR_COVENANT_SECTOR_INVASION_EARLY: 100
+    firstMonth: 4
+    maxRuns: 1
+    varName: sectorInvasionEarly
+    executionOdds: 100
+    startDelay: 11520
+
+  - type: stealthBaseDeployment1
+    missionWeights:
+      0:
+        STR_COVENANT_QUICK_SECTOR_INVASION: 100
+    firstMonth: 4
+    maxRuns: 6
+    varName: stealthBaseDeployment1
+    executionOdds: 100
+    startDelay: 11520
+
+  - type: stealthBaseDeployment2
+    missionWeights:
+      0:
+        STR_COVENANT_QUICK_SECTOR_INVASION: 100
+    firstMonth: 5
+    maxRuns: 6
+    varName: stealthBaseDeployment2
+    executionOdds: 100
+    startDelay: 14400
+
   - type: recurringTerrorNormal
-#    label: 1
     varName: recurringTerrorNormal
-    firstMonth: 1
+    firstMonth: 4
     executionOdds: 100
     missionWeights:
       0:
@@ -74,47 +176,150 @@ missionScripts:
         STR_REGION_11: 5
     useTable: false
 
-  - type: sectorInvasionEarly
+  - type: covenantOrbitalSupport
     missionWeights:
       0:
-        STR_COVENANT_SECTOR_INVASION_EARLY: 100
-    firstMonth: 0
+        STR_COVENANT_ORBITAL_SUPPORT: 100
+    firstMonth: 4
+    maxRuns: 3
+    varName: covenantOrbitalSupport
+    startDelay: 7200
+    randomDelay: 3600
+    executionOdds: 100
+
+####################################################
+######  PHASE 4: NAVY ARRIVES / SOS  ###############
+#####################  MONTH 7  ###################
+####################################################
+
+  - type: navySOSResponse
+    missionWeights:
+      0:
+        STR_NAVY_RENDEZVOUS_DEFENSE: 100
+    regionWeights:
+      0:
+        STR_REGION_6: 100
+    firstMonth: 6
     maxRuns: 1
-    varName: sectorInvasionEarly
+    varName: navySOSResponse
+    startDelay: 21600
     executionOdds: 100
-    startDelay: 11520
+    useTable: false
 
-  - type: stealthBaseDeployment1
+  - type: covenantNavyInterdiction
     missionWeights:
       0:
-        STR_COVENANT_QUICK_SECTOR_INVASION: 100
-    firstMonth: 0
-    maxRuns: 6
-    varName: stealthBaseDeployment1
-    executionOdds: 100
-    startDelay: 11520
-    #startDelay: 14400
-
-  - type: stealthBaseDeployment2
-    missionWeights:
-      0:
-        STR_COVENANT_QUICK_SECTOR_INVASION: 100
-    firstMonth: 0
-    maxRuns: 6
-    varName: stealthBaseDeployment2
-    executionOdds: 100
+        STR_COVENANT_NAVY_INTERDICTION: 100
+    firstMonth: 6
+    maxRuns: 2
+    varName: covenantNavyInterdiction
     startDelay: 14400
-    #startDelay: 14400
+    randomDelay: 7200
+    executionOdds: 100
+
+####################################################
+######  PHASE 5: ONI / SPARTANS ARRIVE  ############
+##################  MONTHS 8–9  ###################
+####################################################
+
+  - type: oniIntelOperations
+    missionWeights:
+      0:
+        STR_ONI_OPERATION: 100
+    regionWeights:
+      0:
+        STR_REGION_1: 10
+        STR_REGION_2: 10
+        STR_REGION_3: 10
+        STR_REGION_4: 10
+        STR_REGION_5: 10
+        STR_REGION_6: 30
+        STR_REGION_7: 10
+        STR_REGION_10: 10
+    firstMonth: 7
+    maxRuns: 2
+    varName: oniIntelOperations
+    startDelay: 14400
+    randomDelay: 7200
+    executionOdds: 100
+    useTable: false
+
+  - type: covenantSpartanResponse
+    missionWeights:
+      0:
+        STR_COVENANT_SPARTAN_HUNT: 100
+    firstMonth: 7
+    varName: covenantSpartanResponse
+    startDelay: 21600
+    randomDelay: 7200
+    executionOdds: 100
+
+  - type: Retaliation
+    missionWeights:
+      0:
+        STR_COVENANT_RETALIATION: 100
+    startDelay: 20
+    randomDelay: 43500
+    targetBaseOdds: 100
+    firstMonth: 0
+    useTable: false
+
+####################################################
+######  PHASE 6: ENDGAME / ASSAULT PREP  ###########
+##################  MONTHS 10–11  #################
+####################################################
 
   - type: sectorInvasionLate
     missionWeights:
       0:
         STR_COVENANT_SECTOR_INVASION_LATE: 100
-    firstMonth: 1
-#    maxRuns: 6
+    firstMonth: 9
     varName: sectorInvasionLate
     executionOdds: 100
     startDelay: 21600
+
+  - type: covenantGlassingPrep
+    missionWeights:
+      0:
+        STR_COVENANT_GLASSING_PREP: 100
+    regionWeights:
+      0:
+        STR_REGION_1: 10
+        STR_REGION_2: 10
+        STR_REGION_3: 10
+        STR_REGION_4: 10
+        STR_REGION_5: 10
+        STR_REGION_6: 20
+        STR_REGION_7: 10
+        STR_REGION_8: 10
+        STR_REGION_10: 10
+    firstMonth: 9
+    maxRuns: 2
+    varName: covenantGlassingPrep
+    startDelay: 14400
+    randomDelay: 7200
+    executionOdds: 100
+    useTable: false
+
+  - type: assaultStagingDefense
+    missionWeights:
+      0:
+        STR_COVENANT_STAGING_ASSAULT: 100
+    regionWeights:
+      0:
+        STR_REGION_6: 100
+    firstMonth: 10
+    maxRuns: 3
+    varName: assaultStagingDefense
+    startDelay: 7200
+    randomDelay: 4320
+    executionOdds: 100
+    useTable: false
+
+####################################################
+######  PHASE 7: FINAL MISSION  ####################
+##################  MONTH 12+  ####################
+####################################################
 
   - type: FinalEvacuation
     missionWeights:
@@ -125,28 +330,56 @@ missionScripts:
         STR_EVACUATION_REGION: 100
     useTable: false
     maxRuns: 1
-    firstMonth: 1
+    firstMonth: 11
     varName: FinalEvacuationMission
     startDelay: 41760 # Technically 29 days
     executionOdds: 100
 
-  - type: Retaliation
-    missionWeights:
-      0:
-        STR_COVENANT_RETALIATION: 100
-    startDelay: 20
-    randomDelay: 43500
-    targetBaseOdds: 100
-    #minScore: 1000
-    firstMonth: 0
-    useTable: false
 
 alienMissions:
-  - type: STR_COVENANT_QUICK_SECTOR_INVASION #Covenant sneaks one base early
-    points: 100 #Pact score only awarded on month end
+####################################################
+######  PHASE 1: INSURRECTIONIST UPRISING  #########
+####################################################
+
+  - type: STR_INSURGENT_RAID # Innies strike civilian and UNSC infrastructure
+    points: 10
+    objective: 3
+    siteType: STR_INSURGENT_RAID_SITE
+    spawnZone: 3
+    raceWeights:
+      0:
+        STR_INSURGENTS: 100
+    waves:
+      - ufo: STR_INSURGENT_RAID_SITE
+        count: 1
+        trajectory: STATIC_TRAJECTORY
+        timer: 0
+        objective: true
+
+  - type: STR_INSURGENT_SUPPLY_INTERDICTION # Innies ambush a UNSC supply convoy
+    points: 15
+    objective: 3
+    siteType: STR_INSURGENT_CONVOY_AMBUSH
+    spawnZone: 3
+    raceWeights:
+      0:
+        STR_INSURGENTS: 100
+    waves:
+      - ufo: STR_INSURGENT_CONVOY_AMBUSH
+        count: 1
+        trajectory: STATIC_TRAJECTORY
+        timer: 0
+        objective: true
+
+####################################################
+######  PHASE 2: EARLY COVENANT CONTACT  ###########
+####################################################
+
+  - type: STR_COVENANT_QUICK_SECTOR_INVASION # Covenant sneaks one base early
+    points: 100 # Pact score only awarded on month end
     objective: 1
     siteType: STR_COVENANT_SPIRE_DEPLOYMENT
-    spawnZone: 4 #Mission zone for alien bases
+    spawnZone: 4 # Mission zone for alien bases
     endlessInfiltration: false
     raceWeights:
       0:
@@ -156,104 +389,6 @@ alienMissions:
         count: 1
         trajectory: P2
         timer: 100
-
-  - type: STR_COVENANT_SECTOR_INVASION_EARLY #Covenant attempts to overrun the UNSC regional commands
-    points: 100 #Pact score only awarded on month end
-    objective: 1
-    siteType: STR_COVENANT_SPIRE_DEPLOYMENT
-    spawnZone: 4 #Mission zone for alien bases
-    endlessInfiltration: false
-    raceWeights:
-      0:
-        STR_SANGHEILI_LANCE: 10
-        STR_STANDARD_LANCE: 40
-        STR_UNGGOY_LANCE: 40
-    waves:
-      - ufo: STR_SPIRIT_DROPSHIP
-        count: 1
-        trajectory: P1
-        timer: 1440
-        escort: false
-      - ufo: STR_BANSHEE_FIGHTER
-        count: 1
-        trajectory: P1
-        timer: 1440
-        escort: true
-      - ufo: STR_CPV_CLASS_HEAVY_DESTROYER
-        count: 1
-        trajectory: P2
-        timer: 7200
-      - ufo: STR_CCS_CLASS_BATTLECRUISER
-        count: 1
-        trajectory: P7
-        timer: 7200
-
-  - type: STR_COVENANT_SECTOR_INVASION_LATE #Covenant attempts to overrun the UNSC regional commands
-    points: 100 #Pact score only awarded on month end
-    objective: 1
-    siteType: STR_COVENANT_SPIRE_DEPLOYMENT
-    spawnZone: 4 #Mission zone for alien bases
-    endlessInfiltration: false
-    raceWeights:
-      0:
-        STR_SANGHEILI_LANCE: 10
-        STR_STANDARD_LANCE: 40
-        STR_UNGGOY_LANCE: 40
-    waves:
-      - ufo: STR_CPV_CLASS_HEAVY_DESTROYER
-        count: 1
-        trajectory: P2
-        timer: 7200
-      - ufo: STR_BANSHEE_FIGHTER
-        count: 1
-        trajectory: P2
-        timer: 7200
-        escort: true
-      - ufo: STR_CCS_CLASS_BATTLECRUISER
-        count: 1
-        trajectory: P7
-        timer: 4320
-      - ufo: STR_SERAPH_FIGHTER
-        count: 1
-        trajectory: P7
-        timer: 4320
-        escort: true
-      - ufo: STR_CAS_CLASS_ASSAULT_CARRIER
-        count: 1
-        trajectory: P7
-        timer: 7200
-      - ufo: STR_SERAPH_FIGHTER
-        count: 2
-        trajectory: P7
-        timer: 7200
-        escort: true
-
-  - type: STR_COVENANT_CITY_ATTACK
-    points: 0
-    objective: 3
-    siteType: STR_TERROR_MISSION
-    spawnZone: 3 #Mission zone for terror missions
-    raceWeights:
-      0:
-        STR_SANGHEILI_LANCE: 10
-        STR_STANDARD_LANCE: 40
-        STR_UNGGOY_LANCE: 40
-    waves: 
-      - ufo: STR_SPIRIT_DROPSHIP
-        count: 1
-        trajectory: P1
-        timer: 1440
-        escort: false
-      - ufo: STR_BANSHEE_FIGHTER
-        count: 3
-        trajectory: P1
-        timer: 1440
-        escort: true
-      - ufo: STR_CCS_CLASS_BATTLECRUISER
-        count: 1
-        trajectory: P7
-        timer: 7200
-        objective: true
 
   - type: STR_COVENANT_RECON
     points: 10
@@ -291,6 +426,61 @@ alienMissions:
         timer: 5000
         huntMode: 1
 
+  - type: STR_COVENANT_FIRST_CONTACT_TERROR # Probing terror attack, lighter than city assault
+    points: 20
+    objective: 3
+    siteType: STR_TERROR_MISSION
+    spawnZone: 3
+    raceWeights:
+      0:
+        STR_SANGHEILI_LANCE: 50
+        STR_STANDARD_LANCE: 50
+    waves:
+      - ufo: STR_SPIRIT_DROPSHIP
+        count: 1
+        trajectory: P1
+        timer: 1440
+      - ufo: STR_BANSHEE_FIGHTER
+        count: 2
+        trajectory: P1
+        timer: 1440
+        escort: true
+
+####################################################
+######  PHASE 3: COVENANT ESCALATION  ##############
+####################################################
+
+  - type: STR_COVENANT_SECTOR_INVASION_EARLY # Covenant attempts to overrun UNSC regional commands
+    points: 100 # Pact score only awarded on month end
+    objective: 1
+    siteType: STR_COVENANT_SPIRE_DEPLOYMENT
+    spawnZone: 4 # Mission zone for alien bases
+    endlessInfiltration: false
+    raceWeights:
+      0:
+        STR_SANGHEILI_LANCE: 10
+        STR_STANDARD_LANCE: 40
+        STR_UNGGOY_LANCE: 40
+    waves:
+      - ufo: STR_SPIRIT_DROPSHIP
+        count: 1
+        trajectory: P1
+        timer: 1440
+        escort: false
+      - ufo: STR_BANSHEE_FIGHTER
+        count: 1
+        trajectory: P1
+        timer: 1440
+        escort: true
+      - ufo: STR_CPV_CLASS_HEAVY_DESTROYER
+        count: 1
+        trajectory: P2
+        timer: 7200
+      - ufo: STR_CCS_CLASS_BATTLECRUISER
+        count: 1
+        trajectory: P7
+        timer: 7200
+
   - type: STR_COVENANT_AIR_SUPERIORITY_2
     points: 1
     objective: 0
@@ -310,6 +500,158 @@ alienMissions:
         huntMode: 2
         escort: true
 
+  - type: STR_COVENANT_CITY_ATTACK
+    points: 0
+    objective: 3
+    siteType: STR_TERROR_MISSION
+    spawnZone: 3 # Mission zone for terror missions
+    raceWeights:
+      0:
+        STR_SANGHEILI_LANCE: 10
+        STR_STANDARD_LANCE: 40
+        STR_UNGGOY_LANCE: 40
+    waves:
+      - ufo: STR_SPIRIT_DROPSHIP
+        count: 1
+        trajectory: P1
+        timer: 1440
+        escort: false
+      - ufo: STR_BANSHEE_FIGHTER
+        count: 3
+        trajectory: P1
+        timer: 1440
+        escort: true
+      - ufo: STR_CCS_CLASS_BATTLECRUISER
+        count: 1
+        trajectory: P7
+        timer: 7200
+        objective: true
+
+  - type: STR_COVENANT_ORBITAL_SUPPORT # CCS provides orbital fire support for ground forces
+    points: 30
+    objective: 0
+    raceWeights:
+      0:
+        STR_SANGHEILI_LANCE: 100
+    waves:
+      - ufo: STR_CCS_CLASS_BATTLECRUISER
+        count: 1
+        trajectory: P7
+        timer: 7200
+        huntMode: 0
+      - ufo: STR_SERAPH_FIGHTER
+        count: 2
+        trajectory: P7
+        timer: 5000
+        huntMode: 1
+        escort: true
+
+####################################################
+######  PHASE 4: NAVY ARRIVES / SOS  ###############
+####################################################
+
+  - type: STR_NAVY_RENDEZVOUS_DEFENSE # UNSC Navy arrives; player must hold the rendezvous point
+    points: 10
+    objective: 3
+    siteType: STR_NAVY_RENDEZVOUS
+    spawnZone: 0
+    raceWeights:
+      0:
+        STR_SANGHEILI_LANCE: 100
+    waves:
+      - ufo: STR_NAVY_RENDEZVOUS
+        count: 1
+        trajectory: STATIC_TRAJECTORY
+        timer: 0
+        objective: true
+
+  - type: STR_COVENANT_NAVY_INTERDICTION # Covenant scrambles to destroy incoming Navy fleet
+    points: 50
+    objective: 0
+    raceWeights:
+      0:
+        STR_SANGHEILI_LANCE: 100
+    waves:
+      - ufo: STR_SDV_CLASS_HEAVY_CORVETTE
+        count: 1
+        trajectory: P7
+        timer: 5000
+        huntMode: 2
+      - ufo: STR_SERAPH_FIGHTER
+        count: 2
+        trajectory: P7
+        timer: 5000
+        huntMode: 2
+        escort: true
+      - ufo: STR_CCS_CLASS_BATTLECRUISER
+        count: 1
+        trajectory: P7
+        timer: 10000
+        huntMode: 2
+
+####################################################
+######  PHASE 5: ONI / SPARTANS ARRIVE  ############
+####################################################
+
+  - type: STR_ONI_OPERATION # ONI deploys; player defends the insertion point
+    points: 10
+    objective: 3
+    siteType: STR_ONI_BLACK_SITE
+    spawnZone: 3
+    raceWeights:
+      0:
+        STR_SANGHEILI_LANCE: 70
+        STR_STANDARD_LANCE: 30
+    waves:
+      - ufo: STR_ONI_BLACK_SITE
+        count: 1
+        trajectory: STATIC_TRAJECTORY
+        timer: 0
+        objective: true
+      - ufo: STR_SPIRIT_DROPSHIP
+        count: 1
+        trajectory: P1
+        timer: 1440
+      - ufo: STR_SERAPH_FIGHTER
+        count: 2
+        trajectory: P1
+        timer: 1440
+        escort: true
+      - ufo: STR_CPV_CLASS_HEAVY_DESTROYER
+        count: 1
+        trajectory: P7
+        timer: 7200
+
+  - type: STR_COVENANT_SPARTAN_HUNT # Covenant deploys spec-ops in response to Spartan activity
+    points: 50
+    objective: 0
+    raceWeights:
+      0:
+        STR_SANGHEILI_LANCE: 80
+        STR_STANDARD_LANCE: 20
+    waves:
+      - ufo: STR_SPIRIT_DROPSHIP
+        count: 1
+        trajectory: P2
+        timer: 1440
+        huntMode: 0
+      - ufo: STR_SERAPH_FIGHTER
+        count: 2
+        trajectory: P2
+        timer: 1440
+        huntMode: 1
+        escort: true
+      - ufo: STR_CPV_CLASS_HEAVY_DESTROYER
+        count: 1
+        trajectory: P2
+        timer: 5000
+        huntMode: 2
+      - ufo: STR_CCS_CLASS_BATTLECRUISER
+        count: 1
+        trajectory: P7
+        timer: 7200
+        huntMode: 2
+
   - type: STR_COVENANT_RETALIATION
     points: 0
     objective: 4
@@ -324,6 +666,117 @@ alienMissions:
         trajectory: P2
         timer: 1440
         huntMode: 0
+
+####################################################
+######  PHASE 6: ENDGAME / ASSAULT PREP  ###########
+####################################################
+
+  - type: STR_COVENANT_SECTOR_INVASION_LATE # Covenant attempts to overrun UNSC regional commands
+    points: 100 # Pact score only awarded on month end
+    objective: 1
+    siteType: STR_COVENANT_SPIRE_DEPLOYMENT
+    spawnZone: 4 # Mission zone for alien bases
+    endlessInfiltration: false
+    raceWeights:
+      0:
+        STR_SANGHEILI_LANCE: 10
+        STR_STANDARD_LANCE: 40
+        STR_UNGGOY_LANCE: 40
+    waves:
+      - ufo: STR_CPV_CLASS_HEAVY_DESTROYER
+        count: 1
+        trajectory: P2
+        timer: 7200
+      - ufo: STR_BANSHEE_FIGHTER
+        count: 1
+        trajectory: P2
+        timer: 7200
+        escort: true
+      - ufo: STR_CCS_CLASS_BATTLECRUISER
+        count: 1
+        trajectory: P7
+        timer: 4320
+      - ufo: STR_SERAPH_FIGHTER
+        count: 1
+        trajectory: P7
+        timer: 4320
+        escort: true
+      - ufo: STR_CAS_CLASS_ASSAULT_CARRIER
+        count: 1
+        trajectory: P7
+        timer: 7200
+      - ufo: STR_SERAPH_FIGHTER
+        count: 2
+        trajectory: P7
+        timer: 7200
+        escort: true
+
+  - type: STR_COVENANT_GLASSING_PREP # Covenant deploys glassing equipment; must be stopped
+    points: 200
+    objective: 3
+    siteType: STR_GLASSING_BEACON
+    spawnZone: 3
+    raceWeights:
+      0:
+        STR_SANGHEILI_LANCE: 60
+        STR_STANDARD_LANCE: 40
+    waves:
+      - ufo: STR_GLASSING_BEACON
+        count: 1
+        trajectory: STATIC_TRAJECTORY
+        timer: 0
+        objective: true
+      - ufo: STR_SPIRIT_DROPSHIP
+        count: 2
+        trajectory: P1
+        timer: 1440
+      - ufo: STR_SERAPH_FIGHTER
+        count: 2
+        trajectory: P7
+        timer: 7200
+        escort: true
+      - ufo: STR_CCS_CLASS_BATTLECRUISER
+        count: 1
+        trajectory: P7
+        timer: 7200
+
+  - type: STR_COVENANT_STAGING_ASSAULT # Covenant pre-emptive strike on UNSC assault staging areas
+    points: 100
+    objective: 3
+    siteType: STR_UNSC_STAGING_AREA
+    spawnZone: 3
+    raceWeights:
+      0:
+        STR_SANGHEILI_LANCE: 50
+        STR_STANDARD_LANCE: 30
+        STR_UNGGOY_LANCE: 20
+    waves:
+      - ufo: STR_UNSC_STAGING_AREA
+        count: 1
+        trajectory: STATIC_TRAJECTORY
+        timer: 0
+        objective: true
+      - ufo: STR_SPIRIT_DROPSHIP
+        count: 2
+        trajectory: P1
+        timer: 1440
+      - ufo: STR_BANSHEE_FIGHTER
+        count: 3
+        trajectory: P1
+        timer: 1440
+        escort: true
+      - ufo: STR_CPV_CLASS_HEAVY_DESTROYER
+        count: 1
+        trajectory: P2
+        timer: 7200
+      - ufo: STR_CAS_CLASS_ASSAULT_CARRIER
+        count: 1
+        trajectory: P7
+        timer: 10800
+
+####################################################
+######  PHASE 7: FINAL MISSION  ####################
+####################################################
 
   - type: STR_INSURGENT_ASSASINATION_MISSION
     points: 10
@@ -354,6 +807,7 @@ alienMissions:
         trajectory: STATIC_TRAJECTORY
         timer: 0
         objective: true
+
 
 ufoTrajectories:
   - id: STATIC_TRAJECTORY
