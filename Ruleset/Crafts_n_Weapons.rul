@@ -153,13 +153,11 @@ crafts:
     speedMax: 580
     avoidBonus: 30
     accel: 6
-    weapons: 4
+    weapons: 2
     weaponStrings:
       - STR_30MM_CANNON_STRING
-      - STR_30MM_CANNON_STRING
       - STR_MEDUSA_MISSILE_STRING
-      - STR_MEDUSA_MISSILE_STRING
-    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_30MM_CANNON_UC", "STR_MEDUSA_MISSILE_UC", "STR_MEDUSA_MISSILE_UC"]
+    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_MEDUSA_MISSILE_UC"]
     vehicles: 0
     allowLanding: false
     costBuy: 30000
@@ -180,13 +178,11 @@ crafts:
     speedMax: 450
     avoidBonus: 15
     accel: 4
-    weapons: 4
+    weapons: 2
     weaponStrings:
-      - STR_50MM_CANNON_STRING
-      - STR_50MM_CANNON_STRING
       - STR_ASGM10_MISSILE_STRING
       - STR_ASGM10_MISSILE_STRING
-    fixedWeapons: ["STR_50MM_CANNON_UC", "STR_50MM_CANNON_UC", "STR_ASGM10_MISSILE_UC", "STR_ASGM10_MISSILE_UC"]
+    fixedWeapons: ["STR_ASGM10_MISSILE_UC", "STR_ASGM10_MISSILE_UC"]
     vehicles: 0
     allowLanding: false
     costBuy: 35000
@@ -276,9 +272,8 @@ crafts:
     weaponStrings:
       - STR_30MM_CANNON_STRING
       - STR_30MM_CANNON_STRING
-      - STR_MEDUSA_MISSILE_STRING
-      - STR_MEDUSA_MISSILE_STRING
-    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_30MM_CANNON_UC", "STR_MEDUSA_MISSILE_UC", "STR_MEDUSA_MISSILE_UC"]
+      - STR_ARCHER_MISSILE_STRING
+    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_30MM_CANNON_UC", "STR_ARCHER_MISSILE_STRING"]
     vehicles: 0
     allowLanding: false
     costBuy: 120000
