@@ -176,7 +176,7 @@ crafts:
     fuelMax: 1000
     damageMax: 300
     speedMax: 450
-    avoidBonus: 15
+    avoidBonus: 20
     accel: 4
     weapons: 2
     weaponStrings:
@@ -267,8 +267,8 @@ crafts:
     shieldRecharge: 80
     speedMax: 820
     avoidBonus: 70
-    accel: 10
-    weapons: 4
+    accel: 7
+    weapons: 3
     weaponStrings:
       - STR_30MM_CANNON_STRING
       - STR_30MM_CANNON_STRING
@@ -276,41 +276,41 @@ crafts:
     fixedWeapons: ["STR_30MM_CANNON_UC", "STR_30MM_CANNON_UC", "STR_ARCHER_MISSILE_STRING"]
     vehicles: 0
     allowLanding: false
-    costBuy: 120000
-    costSell: 80000
+    costBuy: 40000
+    costSell: 25000
     refuelRate: 15
     transferTime: 96
     autoPatrol: true
     sightRange: 0
     radarRange: 150
     radarChance: 18
-    score: 600
+    score: 350
 
   - type: STR_B65_SHORTSWORD
     sprite: 107
     fuelMax: 1500
-    damageMax: 650
+    damageMax: 450
     speedMax: 680
     avoidBonus: 55
-    accel: 7
+    accel: 6
     weapons: 4
     weaponStrings:
-      - STR_50MM_CANNON_STRING
-      - STR_50MM_CANNON_STRING
+      - STR_30MM_CANNON_STRING
+      - STR_ARCHER_MISSILE_STRING
       - STR_ASGM10_MISSILE_STRING
       - STR_ASGM10_MISSILE_STRING
-    fixedWeapons: ["STR_50MM_CANNON_UC", "STR_50MM_CANNON_UC", "STR_ASGM10_MISSILE_UC", "STR_ASGM10_MISSILE_UC"]
+    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_ARCHER_MISSILE_STRING", "STR_ASGM10_MISSILE_UC", "STR_ASGM10_MISSILE_UC"]
     vehicles: 0
     allowLanding: false
-    costBuy: 130000
-    costSell: 88000
+    costBuy: 48000
+    costSell: 36000
     refuelRate: 12
     transferTime: 96
     autoPatrol: true
     sightRange: 0
     radarRange: 140
     radarChance: 15
-    score: 600
+    score: 450
 
 # sprite: 102 | INTICON min: 102 | INTICON dogfight: 113 | BASEBITS: 135
   - type: STR_SABRE_FIGHTER
@@ -332,8 +332,8 @@ crafts:
     fixedWeapons: ["STR_30MM_CANNON_UC", "STR_30MM_CANNON_UC", "STR_MEDUSA_MISSILE_UC", "STR_MEDUSA_MISSILE_UC"]
     vehicles: 0
     allowLanding: false
-    costBuy: 50000
-    costSell: 35000
+    costBuy: 55000
+    costSell: 45000
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
@@ -415,7 +415,7 @@ crafts:
   - type: STR_LONGSWORD_FIGHTER
     sprite: 103
     fuelMax: 1000
-    damageMax: 450
+    damageMax: 550
     speedMax: 600
     avoidBonus: 40
     accel: 6
@@ -428,8 +428,8 @@ crafts:
     fixedWeapons: ["STR_50MM_CANNON_UC", "STR_50MM_CANNON_UC", "STR_ASGM10_MISSILE_UC", "STR_ASGM10_MISSILE_UC"]
     vehicles: 0
     allowLanding: false
-    costBuy: 50000
-    costSell: 35000
+    costBuy: 65000
+    costSell: 45000
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
