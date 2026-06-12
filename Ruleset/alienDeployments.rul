@@ -1306,12 +1306,8 @@ alienDeployments:
     length: 50
     height: 11
 
-#####################################
-######  PHASE 6: ENDGAME / ASSAULT PREP  #####
-#####################################
-
-  - type: STR_GLASSING_BEACON
-    # Destroy the Covenant glassing beacon before it reaches full power. Time is short.
+  - type: STR_COVENANT_SPARTAN_HUNT
+    # Covenant deploy Sangheili special operations forces to track down and hunt the player 
     data:
       - alienRank: 7
         lowQty: 1
@@ -1323,16 +1319,12 @@ alienDeployments:
             - STR_PLASMA_GRENADE
           -
             - STR_PLASMA_GRENADE
-          -
-            - STR_PLASMA_GRENADE
       - alienRank: 6
         lowQty: 1
         highQty: 2
         dQty: 1
         percentageOutsideUfo: 50
         itemSets:
-          -
-            - STR_PLASMA_GRENADE
           -
             - STR_PLASMA_GRENADE
           -
@@ -1364,8 +1356,8 @@ alienDeployments:
             - STR_PLASMA_GRENADE
             - STR_PLASMA_GRENADE
       - alienRank: 3
-        lowQty: 3
-        highQty: 6
+        lowQty: 2
+        highQty: 5
         dQty: 1
         percentageOutsideUfo: 25
         itemSets:
@@ -1375,203 +1367,58 @@ alienDeployments:
           -
             - STR_PLASMA_GRENADE
           -
-            - STR_PLASMA_GRENADE
             - STR_PLASMA_GRENADE
       - alienRank: 2
-        lowQty: 3
-        highQty: 6
+        lowQty: 2
+        highQty: 4
         dQty: 1
-        percentageOutsideUfo: 25
+        percentageOutsideUfo: 20
         itemSets:
-          -
-            - STR_PLASMA_GRENADE
-            - STR_PLASMA_GRENADE
-          -
-            - STR_PLASMA_GRENADE
-            - STR_PLASMA_GRENADE
-          -
-            - STR_PLASMA_GRENADE
+          - []
       - alienRank: 1
         lowQty: 1
         highQty: 2
-        dQty: 1
+        dQty: 0
         percentageOutsideUfo: 0
         itemSets:
-          -
-            - STR_PLASMA_GRENADE
-            - STR_PLASMA_GRENADE
-          -
-            - STR_PLASMA_GRENADE
-            - STR_PLASMA_GRENADE
-          -
-            - STR_PLASMA_GRENADE
+          - []
       - alienRank: 0
         lowQty: 1
         highQty: 1
         dQty: 0
         percentageOutsideUfo: 0
         itemSets:
-          -
-            - STR_PLASMA_GRENADE
-            - STR_PLASMA_GRENADE
-          -
-            - STR_PLASMA_GRENADE
-            - STR_PLASMA_GRENADE
-          -
-            - STR_PLASMA_GRENADE
-    reinforcements:
-      - type: covvie_glassing_wave_easy
-        briefing:
-          palette: 6
-          textOffset: -16
-          title: STR_COVENANT_REINFORCEMENTS_TITLE
-          desc: STR_COVENANT_REINFORCEMENTS_DESC
-          music: GMNEWMAR
-          background: COVENANT_REINFORCEMENTS_BACKGROUND
-          showCraft: false
-          showTarget: false
-        minDifficulty: 0
-        maxDifficulty: 2
-        objectiveDestroyed: false
-        turns: [3, 6]
-        minTurn: 3
-        maxTurn: 6
-        executionOdds: 100
-        maxRuns: 2
-        mapBlockFilterType: 2
-        spawnBlocks: [EDGES]
-        spawnZLevels: [0]
-        randomizeZLevels: false
-        minDistanceFromXcomUnits: 10
-        maxDistanceFromBorders: 2
-        forceSpawnNearFriend: false
-        data:
-          - alienRank: 5
-            lowQty: 3
-            highQty: 6
-            dQty: 0
-            extraQty: 0
-            percentageOutsideUfo: 0
-            itemSets:
-             - []
-          - alienRank: 4
-            lowQty: 2
-            highQty: 4
-            dQty: 0
-            extraQty: 0
-            percentageOutsideUfo: 0
-            itemSets:
-             - []
-          - alienRank: 3
-            lowQty: 1
-            highQty: 3
-            dQty: 0
-            extraQty: 0
-            percentageOutsideUfo: 0
-            itemSets:
-             - []
-      - type: covvie_glassing_wave_hard
-        briefing:
-          palette: 6
-          textOffset: -16
-          title: STR_COVENANT_REINFORCEMENTS_TITLE
-          desc: STR_COVENANT_REINFORCEMENTS_DESC
-          music: GMNEWMAR
-          background: COVENANT_REINFORCEMENTS_BACKGROUND
-          showCraft: false
-          showTarget: false
-        minDifficulty: 3
-        maxDifficulty: 4
-        objectiveDestroyed: false
-        turns: [3, 5]
-        minTurn: 3
-        maxTurn: 5
-        executionOdds: 100
-        maxRuns: 3
-        mapBlockFilterType: 2
-        spawnBlocks: [EDGES]
-        spawnZLevels: [0]
-        randomizeZLevels: false
-        minDistanceFromXcomUnits: 10
-        maxDistanceFromBorders: 2
-        forceSpawnNearFriend: false
-        data:
-          - alienRank: 5
-            lowQty: 4
-            highQty: 8
-            dQty: 0
-            extraQty: 0
-            percentageOutsideUfo: 0
-            itemSets:
-             - []
-          - alienRank: 4
-            lowQty: 3
-            highQty: 6
-            dQty: 0
-            extraQty: 0
-            percentageOutsideUfo: 0
-            itemSets:
-             - []
-          - alienRank: 3
-            lowQty: 2
-            highQty: 4
-            dQty: 0
-            extraQty: 0
-            percentageOutsideUfo: 0
-            itemSets:
-             - []
-          - alienRank: 2
-            lowQty: 2
-            highQty: 4
-            dQty: 0
-            extraQty: 0
-            percentageOutsideUfo: 0
-            itemSets:
-             - []
-          - alienRank: 1
-            lowQty: 1
-            highQty: 2
-            dQty: 0
-            extraQty: 0
-            percentageOutsideUfo: 0
-            itemSets:
-             - []
+          - []
     civilians: 0 # no random civilians
     civiliansByType:
-      STR_ODST_INFANTRY: 2
+      STR_ODST_INFANTRY: 3
       STR_MARINE_RIFLEMAN: 2
       STR_MARINE_ASSAULT: 2
-      STR_MARINE_SUPPORT: 1
       STR_MARINE_OFFICER: 1
     terrains:
-      - DESERT_GRASSLAND
-      - DESERT_SAVANNA
-      - DESERT_STEPPE
-      - FOREST_GRASSLAND
-      - FOREST_SAVANNA
-      - FOREST_STEPPE
-    alert: STR_GLASSING_BEACON_ALERT
+      - INDUSTRIAL
+      - REFINERY
+      - INDUSTRIALSLUM
+    alert: STR_COVENANT_SPARTAN_HUNT_ALERT
     alertBackground: BACK03.SCR
-    alertDescription: STR_GLASSING_BEACON_ALERT_DESCRIPTION
     briefing:
       palette: 6
       #textOffset: -16
       background: BACK16.SCR
-      desc: STR_GLASSING_BEACON_BRIEFING
+      desc: STR_COVENANT_SPARTAN_HUNT_BRIEFING
       showTarget: true
       showCraft: true
-    markerName: STR_GLASSING_BEACON_MARKERNAME
+    markerName: STR_COVENANT_SPARTAN_HUNT_MARKERNAME
     markerIcon: 7
-    duration: [999, 999]
+    duration: [4, 10]
     despawnPenalty: 1000
-    objectiveType: 3
-    objectiveComplete: [STR_GLASSING_BEACON_DISABLED_COMPLETE, 500]
-    objectivePopup: STR_GLASSING_BEACON_DISABLED_POPUP
-    turnLimit: 10
-    chronoTrigger: 2
-    width: 60
-    length: 60
+    width: 50
+    length: 50
     height: 11
+
+#####################################
+######  PHASE 6: ENDGAME / ASSAULT PREP  #####
+#####################################
 
   - type: STR_UNSC_STAGING_AREA
     # Covenant launches a pre-emptive strike against UNSC assault staging positions
