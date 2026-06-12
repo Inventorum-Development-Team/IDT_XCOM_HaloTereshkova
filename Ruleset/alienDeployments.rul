@@ -7,6 +7,11 @@ startingConditions:
       - STR_CHARON_CLASS_LIGHT_FRIGATE
       - STR_PARIS_CLASS_HEAVY_FRIGATE
 
+  - type: STR_COVERT_INSERTION   # Small craft only; ONI doesn't want a fleet showing up
+    allowedCraft:
+      - STR_FALCON_DROPSHIP
+      - STR_FALCON_GUNSHIP
+      - STR_PELICAN_DROPSHIP
 
 
 alienDeployments:
@@ -18,6 +23,11 @@ alienDeployments:
     terrains:
       - CULTA
     script: STR_CRAFT_DEPLOYMENT_PREVIEW
+
+#####################################
+######  COVENANT SHIPS  #############
+#####################################
+
   - type: STR_BANSHEE_FIGHTER
     data:
       - alienRank: 1
@@ -36,6 +46,7 @@ alienDeployments:
       background: BACK16.SCR
       showTarget: true
       showCraft: true
+
   - type: STR_SERAPH_FIGHTER
     data:
       - alienRank: 1
@@ -54,6 +65,7 @@ alienDeployments:
       background: BACK16.SCR
       showTarget: true
       showCraft: true
+
   - type: STR_SPIRIT_DROPSHIP
     data:
       - alienRank: 5
@@ -100,6 +112,7 @@ alienDeployments:
       background: BACK16.SCR
       showTarget: true
       showCraft: true
+
   - type: STR_SDV_CLASS_HEAVY_CORVETTE
     data:
       - alienRank: 5
@@ -154,6 +167,7 @@ alienDeployments:
       background: BACK16.SCR
       showTarget: true
       showCraft: true
+
   - type: STR_SDV_CLASS_HEAVY_CORVETTE_INTERIOR
     data:
       - alienRank: 5
@@ -255,7 +269,9 @@ alienDeployments:
     objectiveType: 3
     objectiveComplete: [STR_NAVIGATION_SYSTEMS_DISABLED_COMPLETE, 500]
     objectivePopup: STR_NAVIGATION_SYSTEMS_DISABLED_COMPLETE
+
 ###########################################
+
   - type: STR_CPV_CLASS_HEAVY_DESTROYER
     data:
       - alienRank: 6
@@ -310,6 +326,7 @@ alienDeployments:
       background: BACK16.SCR
       showTarget: true
       showCraft: true
+
   - type: STR_CPV_CLASS_HEAVY_DESTROYER_INTERIOR
     data:
       - alienRank: 6
@@ -373,6 +390,7 @@ alienDeployments:
     objectivePopup: STR_NAVIGATION_SYSTEMS_DISABLED_COMPLETE
 
 #########################################
+
   - type: STR_CCS_CLASS_BATTLECRUISER
     data:
       - alienRank: 6
@@ -455,6 +473,7 @@ alienDeployments:
       background: BACK16.SCR
       showTarget: true
       showCraft: true
+
   - type: STR_CCS_CLASS_BATTLECRUISER_INTERIOR
     data:
       - alienRank: 7
@@ -545,7 +564,9 @@ alienDeployments:
     objectiveType: 3
     objectiveComplete: [STR_NAVIGATION_SYSTEMS_DISABLED_COMPLETE, 500]
     objectivePopup: STR_NAVIGATION_SYSTEMS_DISABLED_COMPLETE
+
 ##############################################
+
   - type: STR_CAS_CLASS_ASSAULT_CARRIER
     data:
       - alienRank: 6
@@ -603,6 +624,7 @@ alienDeployments:
       background: BACK16.SCR
       showTarget: true
       showCraft: true
+
   - type: STR_CAS_CLASS_ASSAULT_CARRIER_INTERIOR
     data:
       - alienRank: 7
@@ -782,6 +804,1049 @@ alienDeployments:
   - type: STR_BASE_DEFENSE
     height: 6
 
+#####################################
+######  PHASE 1: INSURRECTIONIST UPRISING  #####
+#####################################
+
+  - type: STR_INSURGENT_RAID
+    # Insurrectionists attack civilian and UNSC infrastructure targets
+    data:
+      - alienRank: 5
+        lowQty: 8
+        highQty: 16
+        dQty: 1
+        percentageOutsideUfo: 60
+        itemSets:
+          - []
+      - alienRank: 3
+        lowQty: 3
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 40
+        itemSets:
+          - []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          - []
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          - []
+    civilians: 0 # no random civilians
+    civiliansByType:
+      FEMALE_CIVILIAN: 4
+      MALE_CIVILIAN: 4
+      STR_ARMY_RIFLEMAN: 2
+      STR_ARMY_ASSAULT: 1
+      STR_ARMY_OFFICER: 1
+    terrains:
+      - INDUSTRIAL
+      - REFINERY
+      - INDUSTRIALSLUM
+      - COMRCURBAN
+    alert: STR_INSURGENT_RAID_ALERT
+    alertBackground: BACK03.SCR
+    briefing:
+      palette: 3
+      music: GMENBASE
+      background: INSURRECTIONIST_BACKGROUND
+    markerName: STR_INSURGENT_RAID_SITE
+    duration: [4, 10]
+    despawnPenalty: 500
+    width: 50
+    length: 50
+    height: 11
+
+  - type: STR_INSURGENT_CONVOY_AMBUSH
+    # Insurrectionists ambush a UNSC supply convoy on a key transit route
+    data:
+      - alienRank: 5
+        lowQty: 6
+        highQty: 12
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          - []
+      - alienRank: 3
+        lowQty: 2
+        highQty: 5
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          - []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 30
+        itemSets:
+          - []
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          - []
+    civilians: 0 # no random civilians
+    civiliansByType:
+      STR_ARMY_RIFLEMAN: 3
+      STR_ARMY_ASSAULT: 2
+      STR_ARMY_SUPPORT: 1
+      STR_ARMY_MEDIC: 1
+      STR_ARMY_OFFICER: 1
+    terrains:
+      - INDUSTRIAL
+      - REFINERY
+      - INDUSTRIALSLUM
+    alert: STR_INSURGENT_CONVOY_AMBUSH_ALERT
+    alertBackground: BACK03.SCR
+    briefing:
+      palette: 3
+      music: GMENBASE
+      background: INSURRECTIONIST_BACKGROUND
+      desc: STR_INSURGENT_CONVOY_AMBUSH_BRIEFING
+    markerName: STR_INSURGENT_CONVOY_AMBUSH_SITE
+    duration: [4, 10]
+    despawnPenalty: 500
+    width: 50
+    length: 50
+    height: 11
+
+#####################################
+######  PHASE 2: EARLY COVENANT CONTACT  #####
+#####################################
+
+  - type: STR_COVENANT_FIRST_CONTACT_TERROR
+    # First Covenant terror attack; lighter than full city assault, but a taste of what's coming
+    data:
+      - alienRank: 6
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 70
+        itemSets:
+          - []
+      - alienRank: 5
+        lowQty: 3
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 60
+        itemSets:
+          - []
+      - alienRank: 4
+        lowQty: 2
+        highQty: 5
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          - []
+      - alienRank: 3
+        lowQty: 2
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 30
+        itemSets:
+          - []
+      - alienRank: 2
+        lowQty: 2
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          - []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          - []
+    civilians: 0 # no random civilians
+    civiliansByType:
+      FEMALE_CIVILIAN: 6
+      MALE_CIVILIAN: 6
+      STR_ARMY_RIFLEMAN: 2
+      STR_ARMY_ASSAULT: 1
+      STR_ARMY_OFFICER: 1
+    terrains:
+      - URBAN
+      - COMRCURBAN
+      - INDUSTRIALSLUM
+      - DOWNTOWN
+      - POLIS
+    alert: STR_COVENANT_FIRST_CONTACT_ALERT
+    alertBackground: BACK03.SCR
+    briefing:
+      palette: 6
+      #textOffset: -16
+      background: BACK16.SCR
+      desc: STR_COVENANT_FIRST_CONTACT_BRIEFING
+    markerName: STR_TERROR_SITE
+    duration: [4, 10]
+    despawnPenalty: 800
+    width: 50
+    length: 50
+    height: 11
+
+#####################################
+######  PHASE 4: NAVY ARRIVES / SOS  #####
+#####################################
+
+  - type: STR_NAVY_RENDEZVOUS
+    # Hold the rendezvous point while the UNSC Navy fleet makes planetfall
+    data:
+      - alienRank: 6
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          - []
+      - alienRank: 5
+        lowQty: 5
+        highQty: 10
+        dQty: 1
+        percentageOutsideUfo: 60
+        itemSets:
+          - []
+      - alienRank: 4
+        lowQty: 4
+        highQty: 8
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 3
+        lowQty: 3
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 30
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 2
+        lowQty: 3
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          - []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          - []
+    reinforcements:
+      - type: covvie_navy_wave_easy
+        briefing:
+          palette: 6
+          textOffset: -16
+          title: STR_COVENANT_REINFORCEMENTS_TITLE
+          desc: STR_COVENANT_REINFORCEMENTS_DESC
+          music: GMNEWMAR
+          background: COVENANT_REINFORCEMENTS_BACKGROUND
+          showCraft: false
+          showTarget: false
+        minDifficulty: 0
+        maxDifficulty: 2
+        objectiveDestroyed: false
+        turns: [4, 8]
+        minTurn: 4
+        maxTurn: 8
+        executionOdds: 100
+        maxRuns: 2
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        spawnZLevels: [0]
+        randomizeZLevels: false
+        minDistanceFromXcomUnits: 10
+        maxDistanceFromBorders: 2
+        forceSpawnNearFriend: false
+        data:
+          - alienRank: 5
+            lowQty: 3
+            highQty: 6
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 4
+            lowQty: 2
+            highQty: 4
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 3
+            lowQty: 1
+            highQty: 3
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+      - type: covvie_navy_wave_hard
+        briefing:
+          palette: 6
+          textOffset: -16
+          title: STR_COVENANT_REINFORCEMENTS_TITLE
+          desc: STR_COVENANT_REINFORCEMENTS_DESC
+          music: GMNEWMAR
+          background: COVENANT_REINFORCEMENTS_BACKGROUND
+          showCraft: false
+          showTarget: false
+        minDifficulty: 3
+        maxDifficulty: 4
+        objectiveDestroyed: false
+        turns: [4, 8]
+        minTurn: 4
+        maxTurn: 8
+        executionOdds: 100
+        maxRuns: 3
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        spawnZLevels: [0]
+        randomizeZLevels: false
+        minDistanceFromXcomUnits: 10
+        maxDistanceFromBorders: 2
+        forceSpawnNearFriend: false
+        data:
+          - alienRank: 5
+            lowQty: 4
+            highQty: 8
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 4
+            lowQty: 3
+            highQty: 6
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 3
+            lowQty: 2
+            highQty: 4
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 1
+            lowQty: 1
+            highQty: 2
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+    civilians: 0 # no random civilians
+    civiliansByType:
+      STR_ODST_INFANTRY: 3
+      STR_MARINE_RIFLEMAN: 3
+      STR_MARINE_ASSAULT: 2
+      STR_MARINE_SUPPORT: 1
+      STR_MARINE_MEDIC: 1
+      STR_MARINE_OFFICER: 1
+    terrains:
+      - IDT_AIRPORT
+      - AIRFIELD1
+      - AIRFIELD2
+      - AIRFIELD3
+    alert: STR_NAVY_RENDEZVOUS_ALERT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_NAVY_RENDEZVOUS_ALERT_DESCRIPTION
+    briefing:
+      palette: 6
+      #textOffset: -16
+      background: BACK16.SCR
+      desc: STR_NAVY_RENDEZVOUS_BRIEFING
+      showTarget: true
+      showCraft: true
+    markerName: STR_NAVY_RENDEZVOUS_MARKERNAME
+    markerIcon: 7
+    duration: [999, 999]
+    despawnPenalty: 1000
+    width: 60
+    length: 60
+    height: 11
+
+#####################################
+######  PHASE 5: ONI / SPARTANS ARRIVE  #####
+#####################################
+
+  - type: STR_ONI_BLACK_SITE
+    # Covenant forces locate and assault an ONI covert operations site
+    data:
+      - alienRank: 7
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 6
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 5
+        lowQty: 4
+        highQty: 8
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 4
+        lowQty: 3
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 40
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+      - alienRank: 3
+        lowQty: 2
+        highQty: 5
+        dQty: 1
+        percentageOutsideUfo: 25
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 2
+        lowQty: 2
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          - []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          - []
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          - []
+    civilians: 0 # no random civilians
+    civiliansByType:
+      STR_ODST_INFANTRY: 3
+      STR_MARINE_RIFLEMAN: 2
+      STR_MARINE_ASSAULT: 2
+      STR_MARINE_OFFICER: 1
+    terrains:
+      - INDUSTRIAL
+      - REFINERY
+      - INDUSTRIALSLUM
+    alert: STR_ONI_BLACK_SITE_ALERT
+    alertBackground: BACK03.SCR
+    briefing:
+      palette: 6
+      #textOffset: -16
+      background: BACK16.SCR
+      desc: STR_ONI_BLACK_SITE_BRIEFING
+      showTarget: true
+      showCraft: true
+    startingCondition: STR_COVERT_INSERTION
+    markerName: STR_ONI_BLACK_SITE_MARKERNAME
+    markerIcon: 7
+    duration: [4, 10]
+    despawnPenalty: 1000
+    width: 50
+    length: 50
+    height: 11
+
+#####################################
+######  PHASE 6: ENDGAME / ASSAULT PREP  #####
+#####################################
+
+  - type: STR_GLASSING_BEACON
+    # Destroy the Covenant glassing beacon before it reaches full power. Time is short.
+    data:
+      - alienRank: 7
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 6
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 5
+        lowQty: 4
+        highQty: 8
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 4
+        lowQty: 3
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 40
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+      - alienRank: 3
+        lowQty: 3
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 25
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+      - alienRank: 2
+        lowQty: 3
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 25
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 1
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+    reinforcements:
+      - type: covvie_glassing_wave_easy
+        briefing:
+          palette: 6
+          textOffset: -16
+          title: STR_COVENANT_REINFORCEMENTS_TITLE
+          desc: STR_COVENANT_REINFORCEMENTS_DESC
+          music: GMNEWMAR
+          background: COVENANT_REINFORCEMENTS_BACKGROUND
+          showCraft: false
+          showTarget: false
+        minDifficulty: 0
+        maxDifficulty: 2
+        objectiveDestroyed: false
+        turns: [3, 6]
+        minTurn: 3
+        maxTurn: 6
+        executionOdds: 100
+        maxRuns: 2
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        spawnZLevels: [0]
+        randomizeZLevels: false
+        minDistanceFromXcomUnits: 10
+        maxDistanceFromBorders: 2
+        forceSpawnNearFriend: false
+        data:
+          - alienRank: 5
+            lowQty: 3
+            highQty: 6
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 4
+            lowQty: 2
+            highQty: 4
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 3
+            lowQty: 1
+            highQty: 3
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+      - type: covvie_glassing_wave_hard
+        briefing:
+          palette: 6
+          textOffset: -16
+          title: STR_COVENANT_REINFORCEMENTS_TITLE
+          desc: STR_COVENANT_REINFORCEMENTS_DESC
+          music: GMNEWMAR
+          background: COVENANT_REINFORCEMENTS_BACKGROUND
+          showCraft: false
+          showTarget: false
+        minDifficulty: 3
+        maxDifficulty: 4
+        objectiveDestroyed: false
+        turns: [3, 5]
+        minTurn: 3
+        maxTurn: 5
+        executionOdds: 100
+        maxRuns: 3
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        spawnZLevels: [0]
+        randomizeZLevels: false
+        minDistanceFromXcomUnits: 10
+        maxDistanceFromBorders: 2
+        forceSpawnNearFriend: false
+        data:
+          - alienRank: 5
+            lowQty: 4
+            highQty: 8
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 4
+            lowQty: 3
+            highQty: 6
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 3
+            lowQty: 2
+            highQty: 4
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 2
+            lowQty: 2
+            highQty: 4
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 1
+            lowQty: 1
+            highQty: 2
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+    civilians: 0 # no random civilians
+    civiliansByType:
+      STR_ODST_INFANTRY: 2
+      STR_MARINE_RIFLEMAN: 2
+      STR_MARINE_ASSAULT: 2
+      STR_MARINE_SUPPORT: 1
+      STR_MARINE_OFFICER: 1
+    terrains:
+      - DESERT_GRASSLAND
+      - DESERT_SAVANNA
+      - DESERT_STEPPE
+      - FOREST_GRASSLAND
+      - FOREST_SAVANNA
+      - FOREST_STEPPE
+    alert: STR_GLASSING_BEACON_ALERT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_GLASSING_BEACON_ALERT_DESCRIPTION
+    briefing:
+      palette: 6
+      #textOffset: -16
+      background: BACK16.SCR
+      desc: STR_GLASSING_BEACON_BRIEFING
+      showTarget: true
+      showCraft: true
+    markerName: STR_GLASSING_BEACON_MARKERNAME
+    markerIcon: 7
+    duration: [999, 999]
+    despawnPenalty: 1000
+    objectiveType: 3
+    objectiveComplete: [STR_GLASSING_BEACON_DISABLED_COMPLETE, 500]
+    objectivePopup: STR_GLASSING_BEACON_DISABLED_POPUP
+    turnLimit: 10
+    chronoTrigger: 2
+    width: 60
+    length: 60
+    height: 11
+
+  - type: STR_UNSC_STAGING_AREA
+    # Covenant launches a pre-emptive strike against UNSC assault staging positions
+    data:
+      - alienRank: 7
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 6
+        lowQty: 2
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 5
+        lowQty: 5
+        highQty: 10
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 4
+        lowQty: 4
+        highQty: 8
+        dQty: 1
+        percentageOutsideUfo: 40
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+      - alienRank: 3
+        lowQty: 3
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 25
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+      - alienRank: 2
+        lowQty: 3
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 25
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 1
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+            - STR_PLASMA_GRENADE
+          -
+            - STR_PLASMA_GRENADE
+    reinforcements:
+      - type: covvie_staging_wave_easy
+        briefing:
+          palette: 6
+          textOffset: -16
+          title: STR_COVENANT_REINFORCEMENTS_TITLE
+          desc: STR_COVENANT_REINFORCEMENTS_DESC
+          music: GMNEWMAR
+          background: COVENANT_REINFORCEMENTS_BACKGROUND
+          showCraft: false
+          showTarget: false
+        minDifficulty: 0
+        maxDifficulty: 2
+        objectiveDestroyed: false
+        turns: [3, 6]
+        minTurn: 3
+        maxTurn: 6
+        executionOdds: 100
+        maxRuns: 2
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        spawnZLevels: [0]
+        randomizeZLevels: false
+        minDistanceFromXcomUnits: 10
+        maxDistanceFromBorders: 2
+        forceSpawnNearFriend: false
+        data:
+          - alienRank: 5
+            lowQty: 4
+            highQty: 8
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 4
+            lowQty: 3
+            highQty: 6
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 3
+            lowQty: 2
+            highQty: 4
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 1
+            lowQty: 1
+            highQty: 2
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+      - type: covvie_staging_wave_hard
+        briefing:
+          palette: 6
+          textOffset: -16
+          title: STR_COVENANT_REINFORCEMENTS_TITLE
+          desc: STR_COVENANT_REINFORCEMENTS_DESC
+          music: GMNEWMAR
+          background: COVENANT_REINFORCEMENTS_BACKGROUND
+          showCraft: false
+          showTarget: false
+        minDifficulty: 3
+        maxDifficulty: 4
+        objectiveDestroyed: false
+        turns: [3, 6]
+        minTurn: 3
+        maxTurn: 6
+        executionOdds: 100
+        maxRuns: 3
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        spawnZLevels: [0]
+        randomizeZLevels: false
+        minDistanceFromXcomUnits: 10
+        maxDistanceFromBorders: 2
+        forceSpawnNearFriend: false
+        data:
+          - alienRank: 5
+            lowQty: 4
+            highQty: 8
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 4
+            lowQty: 4
+            highQty: 8
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 3
+            lowQty: 3
+            highQty: 6
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 2
+            lowQty: 2
+            highQty: 4
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 1
+            lowQty: 2
+            highQty: 4
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+          - alienRank: 0
+            lowQty: 1
+            highQty: 2
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+             - []
+    civilians: 0 # no random civilians
+    civiliansByType:
+      STR_ODST_INFANTRY: 3
+      STR_MARINE_RIFLEMAN: 3
+      STR_MARINE_ASSAULT: 2
+      STR_MARINE_SUPPORT: 1
+      STR_MARINE_MEDIC: 1
+      STR_MARINE_OFFICER: 1
+    terrains:
+      - IDT_AIRPORT
+      - AIRFIELD1
+      - AIRFIELD2
+      - AIRFIELD3
+    alert: STR_UNSC_STAGING_AREA_ALERT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_UNSC_STAGING_AREA_ALERT_DESCRIPTION
+    briefing:
+      palette: 6
+      #textOffset: -16
+      background: BACK16.SCR
+      desc: STR_UNSC_STAGING_AREA_BRIEFING
+      showTarget: true
+      showCraft: true
+    markerName: STR_UNSC_STAGING_AREA_MARKERNAME
+    markerIcon: 7
+    duration: [999, 999]
+    despawnPenalty: 1000
+    width: 60
+    length: 60
+    height: 11
+
+#####################################
 
   #- delete: STR_ALIEN_BASE_ASSAULT
   - type: STR_COVENANT_SPIRE_DEPLOYMENT
@@ -1165,8 +2230,6 @@ alienDeployments:
     turnLimit: 7
     chronoTrigger: 2
 
-
-
   - type: STR_INSURGENT_ASSASINATION
     data:
       - alienRank: 5
@@ -1205,6 +2268,7 @@ alienDeployments:
     objectiveType: 8
     objectivePopup: STR_OBJECTIVE_COMPLETED
     objectivesRequired: 1
+
 
 extraSprites:
 ############################################
