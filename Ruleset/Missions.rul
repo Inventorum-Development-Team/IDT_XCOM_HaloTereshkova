@@ -550,21 +550,6 @@ alienMissions:
 ######  PHASE 4: NAVY ARRIVES / SOS  ###############
 ####################################################
 
-  - type: STR_NAVY_RENDEZVOUS_DEFENSE # UNSC Navy arrives; player must hold the rendezvous point
-    points: 10
-    objective: 3
-    siteType: STR_NAVY_RENDEZVOUS
-    spawnZone: 0
-    raceWeights:
-      0:
-        STR_SANGHEILI_LANCE: 100
-    waves:
-      - ufo: STR_NAVY_RENDEZVOUS
-        count: 1
-        trajectory: STATIC_TRAJECTORY
-        timer: 0
-        objective: true
-
   - type: STR_COVENANT_NAVY_INTERDICTION # Covenant scrambles to destroy incoming Navy fleet
     points: 50
     objective: 0
