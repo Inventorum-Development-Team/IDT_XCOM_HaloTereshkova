@@ -278,29 +278,6 @@ missionScripts:
     executionOdds: 100
     startDelay: 21600
 
-  - type: covenantGlassingPrep
-    missionWeights:
-      0:
-        STR_COVENANT_GLASSING_PREP: 100
-    regionWeights:
-      0:
-        STR_REGION_1: 10
-        STR_REGION_2: 10
-        STR_REGION_3: 10
-        STR_REGION_4: 10
-        STR_REGION_5: 10
-        STR_REGION_6: 20
-        STR_REGION_7: 10
-        STR_REGION_8: 10
-        STR_REGION_10: 10
-    firstMonth: 9
-    maxRuns: 2
-    varName: covenantGlassingPrep
-    startDelay: 14400
-    randomDelay: 7200
-    executionOdds: 100
-    useTable: false
-
   - type: assaultStagingDefense
     missionWeights:
       0:
@@ -550,6 +527,21 @@ alienMissions:
 ######  PHASE 4: NAVY ARRIVES / SOS  ###############
 ####################################################
 
+  - type: STR_NAVY_RENDEZVOUS_DEFENSE # UNSC Navy arrives; player must hold the rendezvous point
+    points: 10
+    objective: 3
+    siteType: STR_NAVY_RENDEZVOUS
+    spawnZone: 0
+    raceWeights:
+      0:
+        STR_SANGHEILI_LANCE: 100
+    waves:
+      - ufo: STR_NAVY_RENDEZVOUS
+        count: 1
+        trajectory: STATIC_TRAJECTORY
+        timer: 0
+        objective: true
+
   - type: STR_COVENANT_NAVY_INTERDICTION # Covenant scrambles to destroy incoming Navy fleet
     points: 50
     objective: 0
@@ -695,35 +687,6 @@ alienMissions:
         trajectory: P7
         timer: 7200
         escort: true
-
-  - type: STR_COVENANT_GLASSING_PREP # Covenant deploys glassing equipment; must be stopped
-    points: 200
-    objective: 3
-    siteType: STR_GLASSING_BEACON
-    spawnZone: 3
-    raceWeights:
-      0:
-        STR_SANGHEILI_LANCE: 60
-        STR_STANDARD_LANCE: 40
-    waves:
-      - ufo: STR_GLASSING_BEACON
-        count: 1
-        trajectory: STATIC_TRAJECTORY
-        timer: 0
-        objective: true
-      - ufo: STR_SPIRIT_DROPSHIP
-        count: 2
-        trajectory: P1
-        timer: 1440
-      - ufo: STR_SERAPH_FIGHTER
-        count: 2
-        trajectory: P7
-        timer: 7200
-        escort: true
-      - ufo: STR_CCS_CLASS_BATTLECRUISER
-        count: 1
-        trajectory: P7
-        timer: 7200
 
   - type: STR_COVENANT_STAGING_ASSAULT # Covenant pre-emptive strike on UNSC assault staging areas
     points: 100
