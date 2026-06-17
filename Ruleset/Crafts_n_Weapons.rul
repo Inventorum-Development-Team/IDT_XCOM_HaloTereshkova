@@ -273,7 +273,7 @@ crafts:
       - STR_30MM_CANNON_STRING
       - STR_30MM_CANNON_STRING
       - STR_ARCHER_MISSILE_STRING
-    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_30MM_CANNON_UC", "STR_ARCHER_MISSILE_STRING"]
+    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_30MM_CANNON_UC", "STR_ARCHER_MISSILE_DOUBLE_UC"]
     vehicles: 0
     allowLanding: false
     costBuy: 40000
@@ -291,7 +291,7 @@ crafts:
     fuelMax: 1500
     damageMax: 450
     speedMax: 680
-    avoidBonus: 55
+    avoidBonus: 40
     accel: 6
     weapons: 4
     weaponStrings:
@@ -299,7 +299,7 @@ crafts:
       - STR_ARCHER_MISSILE_STRING
       - STR_ASGM10_MISSILE_STRING
       - STR_ASGM10_MISSILE_STRING
-    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_ARCHER_MISSILE_STRING", "STR_ASGM10_MISSILE_UC", "STR_ASGM10_MISSILE_UC"]
+    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_ARCHER_MISSILE_UC", "STR_ASGM10_MISSILE_UC", "STR_ASGM10_MISSILE_UC"]
     vehicles: 0
     allowLanding: false
     costBuy: 48000
@@ -615,9 +615,9 @@ craftWeapons:
     shieldDamageModifier: 100
     range: 65
     accuracy: 90
-    reloadCautious: 64
-    reloadStandard: 64
-    reloadAggressive: 64
+    reloadCautious: 90
+    reloadStandard: 90
+    reloadAggressive: 90
     ammoMax: 10
     rearmRate: 5
     launcher: STR_MAC_LAUNCHER
@@ -704,6 +704,22 @@ craftWeapons:
     projectileType: 3
     projectileSpeed: 8
 
+ - type: STR_ARCHER_MISSILE_DOUBLE_UC
+    sprite: 306
+    sound: 5
+    damage: 200
+    shieldDamageModifier: 30
+    range: 60
+    accuracy: 50
+    reloadCautious: 44
+    reloadStandard: 44
+    reloadAggressive: 30
+    ammoMax: 2
+    rearmRate: 13
+    launcher: STR_ARCHER_MISSILE_LAUNCHER_DOUBLE
+    projectileType: 1
+    projectileSpeed: 12
+
   - type: STR_ARCHER_MISSILE_UC
     sprite: 306
     sound: 5
@@ -715,7 +731,7 @@ craftWeapons:
     reloadStandard: 48
     reloadAggressive: 32
     ammoMax: 26
-    rearmRate: 13
+    rearmRate: 30
     launcher: STR_ARCHER_MISSILE_LAUNCHER
     projectileType: 1
     projectileSpeed: 12
@@ -727,9 +743,9 @@ craftWeapons:
     shieldDamageModifier: 30
     range: 30
     accuracy: 80
-    reloadCautious: 48
-    reloadStandard: 48
-    reloadAggressive: 32
+    reloadCautious: 36
+    reloadStandard: 26
+    reloadAggressive: 24
     ammoMax: 8
     rearmRate: 4
     launcher: STR_MEDUSA_MISSILE_LAUNCHER
@@ -790,6 +806,12 @@ items:
     size: 1
     # costBuy: 32000
     # costSell: 27000
+    transferTime: 48
+
+  - type: STR_ARCHER_MISSILE_LAUNCHER_DOUBLE
+    size: 1.5
+    # costBuy: 35000
+    # costSell: 37500
     transferTime: 48
 
   - type: STR_ARCHER_MISSILE_LAUNCHER
