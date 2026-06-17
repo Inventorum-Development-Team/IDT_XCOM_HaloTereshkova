@@ -1,7 +1,4 @@
 research:
-  - name: STR_LASER_WEAPONS
-    cost: 50
-    points: 10
   - name: STR_INNIE_OFFICER_INTERROGATION
     cost: 50
     points: 20
@@ -27,7 +24,7 @@ research:
     unlocks:
       - STR_SOS_TO_NAVY
 
-  - name: STR_ELITE_ULTRA_INTERROGATION
+  - name: STR_ELITE_INTERROGATION
     cost: 160
     points: 50
     dependencies:
@@ -40,7 +37,7 @@ research:
     points: 60
     dependencies:
       - STR_INNIE_INTEL_UNUSUAL_ACTIVITY
-      - STR_ELITE_ULTRA_INTERROGATION
+      - STR_ELITE_INTERROGATION
     unlocks:
       - STR_REQUEST_FOR_REINFORCEMENTS
 
