@@ -38,6 +38,7 @@ research:
     dependencies:
       - STR_INNIE_INTEL_UNUSUAL_ACTIVITY
       - STR_ELITE_INTERROGATION
+      - STR_EARLY_WARNING_ARRAY
     unlocks:
       - STR_REQUEST_FOR_REINFORCEMENTS
 
