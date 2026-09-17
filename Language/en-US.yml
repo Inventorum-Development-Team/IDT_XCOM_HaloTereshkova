@@ -14,7 +14,7 @@ en-US:
   STR_SPARTAN_III_REPORT: "Report: SPARTAN-III"
   STR_SPARTAN_III_REPORT_UFOPEDIA: "SPARTAN-III supersoldiers are a special branch of men and women in the service of the UNSC. They are overwhelmingly orphans, whose parents were killed by the Covenant. They have numerous implants and genetic enhancements, which put them on par with their SPARTAN-II counterparts. Most S-IIIs have been assigned to suicide missions, with the exception of a few select groups."
   STR_ODST_REPORT: "Report: ODST"
-  STR_ODST_REPORT_UFOPEDIA: "The best of the best humanity has to offer are enlisted with the Orbital Drop Shock Troopers (not counting SPARTANs, of course). Tough as titanium and braver than any, ODSTs are elite soldiers, deployed from orbit aboard capsules. They usually lead planetary assaults and carry out top-secret missions."
+  STR_ODST_REPORT_UFOPEDIA: "The best of the best humanity has to offer are enlisted with the Orbital Drop Shock Troopers (not counting SPARTANs, of course). Tough as nails and braver than any, ODSTs are elite soldiers, deployed from low orbit aboard capsules. They usually lead planetary assaults and carry out top-secret missions."
   STR_MARINE_REPORT: "Report: Marines"
   STR_MARINE_REPORT_UFOPEDIA: "The UNSC Marine Corps is the military formation deployed in planetary invasions and as protection for Navy ships. Marines have seen combat on numerous worlds and are often the first responders to alien waves. Marines use weapons with {ALT}plenty of ammunition{ALT} and their best attributes are in {ALT}speed and bravery{ALT}, always on the offensive."
   STR_ARMY_TROOPER_REPORT: "Report: Army"
@@ -25,6 +25,8 @@ en-US:
   STR_KIGYAR_REPORT_UFOPEDIA: "Called Kig-Yar by the Elites, they are specialized light infantry that generally serve as support for other Covenant troops. We believe they are mercenaries and do not profess the enemy's religion. Their color hierarchy is: {NEWLINE}>Blue, {ALT}Minors{ALT}. {NEWLINE}>Orange, {ALT}Majors.{ALT} {NEWLINE}>Silver, {ALT}Sniper.{ALT}"
   STR_UNGGOY_REPORT: "Report: Grunts"
   STR_UNGGOY_REPORT_UFOPEDIA: "They're called 'Unggoy', though we call them Grunts because they are the cannon fodder and basic infantry of the enemy. They are cowardly and inefficient, although it is compensated by their numbers. Their color hierarchy is: {NEWLINE}>Orange, {ALT}Minors{ALT}. {NEWLINE}>Red, {ALT}Majors.{ALT} {NEWLINE}>Green, {ALT}Heavy.{ALT} {NEWLINE}>White, {ALT}Ultra.{ALT}"
+  STR_JIRALHANAE_REPORT: "Report: Brutes"
+  STR_JIRALHANAE_REPORT_UFOPEDIA: "Intel reports on this race mention that their alien name is 'Jiralhanae' and they come from a distant world named Doisac. One of the first species known from the Covenant, the Brutes were directly responsible for the initial slaughter on Harvest, in 2525. Strong, cunning, and deeply malicious, they seem motivated by a strong belief in the Prophets and a vicious warrior culture. Their color hierarchy is: {NEWLINE}>Blue, {ALT}Minors{ALT}. {NEWLINE}>Orange, {ALT}Majors.{ALT} {NEWLINE}>Silver, {ALT}Sniper.{ALT}"
 #####################
   STR_TACTICAL_REPORTS: "TACTICAL REPORTS"
   STR_ODST_DROPPOD_TACTIC_REPORT: "Tactics: SOEIV Drop Pods"
@@ -91,7 +93,7 @@ en-US:
   STR_ARCHER_MISSILE_UC: "ARCHER SHIP-TO-SHIP MISSILE"
   STR_ARCHER_MISSILE_LAUNCHER: "Archer Ship-to-Ship Missile"
   STR_ARCHER_MISSILE_STRING: "ARCHER SHIP-TO-SHIP MISSILE"
-  STR_ARCHER_MISSILE_UC_UFOPEDIA: Standard missile mounted on silos and turrets, employed by the UNSC since the time of the Insurrection. Typically effective against unarmored targets, large numbers of Archers are needed to damage the shields of Covenant capital ships.
+  STR_ARCHER_MISSILE_UC_UFOPEDIA: "Standard missile mounted on silos and turrets, employed by the UNSC since the time of the Insurrection. Typically effective against unarmored targets, large numbers of Archers are needed to damage the shields of Covenant capital ships."
   STR_MEDUSA_MISSILE_UC: "ST/MEDUSA MISSILE"
   STR_MEDUSA_MISSILE_LAUNCHER: "ST/Medusa Missile"
   STR_MEDUSA_MISSILE_STRING: "ST/MEDUSA MISSILE"
@@ -665,7 +667,7 @@ en-US:
 
   STR_SANGHEILI_ZEALOT_INTERROGATION: "Breaking the Zealot's silence required sustained tactical sedation and neural stressors. He accused humanity of defiling holy ground merely by existing. He reveals that Covenant specialists have detected Forerunner energy imprints and narrowed search sectors. Zealots personally validate sites of theological importance and purge resistance. Even so, the Prophets conceal key details, creating friction among elite units."
 
-  STR_SANGHEILI_GENERAL_INTERROGATION: "The General remained defiant despite extensive containment procedures, speaking only when convinced that silence would bring him dishonor. He confirms that dormant Forerunner signatures have been triangulated across multiple sectors and that enemy forces are closing on the primary artifact site. The General confirmed that Tereshkova is considered a high-priority archaeological target within the Covenant hierarchy. Intelligence gathered indicates the relic forms part of a broader network of Forerunner systems, and that recovering it could influence Covenant fleet movements across several sector He states that the invasion's brutality is driven by orders from the Prophets to secure the relic at all costs. Failure would be judged as {ALT}heresy by incompetence{ALT}, and afterward, he claims the Covenant will eradicate all human presence on Tereshkova."
+  STR_SANGHEILI_GENERAL_INTERROGATION: "The General remained defiant despite extensive containment procedures, speaking only when convinced that silence would bring him dishonor. He confirms that dormant Forerunner signatures have been triangulated across multiple sectors and that enemy forces are closing on the primary artifact site. The General confirmed that Tereshkova is considered a high-priority archaeological target within the Covenant hierarchy. Intelligence gathered indicates the relic forms part of a broader network of Forerunner systems, and that recovering it could influence Covenant fleet movements across several sector. He states that the invasion's brutality is driven by orders from the Prophets to secure the relic at all costs. Failure would be judged as {ALT}heresy by incompetence{ALT}, and afterward, he claims the Covenant will eradicate all human presence on Tereshkova."
 
   STR_GRUNT_AUTOPSY: "Dissection reveals a methane-dependent physiology with limited muscular development and an enlarged respiratory system adapted for low-oxygen worlds. Their protective harness regulates temperature and atmosphere; once removed, the subject becomes lethargic and rapidly destabilizes. Internal organs show chronic malnourishment, explaining their dependence on ration incentives. Despite their alien appearance, they possess a surprisingly fragile skeletal structure and minimal capacity for pain tolerance."
 
