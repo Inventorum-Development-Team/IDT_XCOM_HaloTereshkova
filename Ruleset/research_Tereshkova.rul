@@ -193,6 +193,8 @@ research:
   - name: STR_ELITE_ZEALOT_INTERROGATION
     cost: 200
     points: 60
+    dependencies:
+      - STR_SANGHEILI_ZEALOT
     unlocks:
       - STR_ARTIFACT_HUNT
 
@@ -207,6 +209,8 @@ research:
   - name: STR_ELITE_GENERAL_INTERROGATION
     cost: 260
     points: 80
+    dependencies:
+      - STR_SANGHEILI_FLEETMASTER
     unlocks:
       - STR_CAPITAL_SHIP_INTEL
 
@@ -229,6 +233,9 @@ research:
   - name: STR_OPERATION_GUILLOTINE
     cost: 500
     points: 200
+    requires:
+      - STR_ARTIFACT_SITE_MAPPING
+      - STR_CAPITAL_SHIP_INTEL
     dependencies:
       - STR_ARTIFACT_SITE_MAPPING
       - STR_CAPITAL_SHIP_INTEL
@@ -317,13 +324,249 @@ research:
     points: 50
     lookup: STR_CYBERDISC_AUTOPSY
     needItem: true
-    
-# Interrogations    
-  - name: STR_SECTOID_ENGINEER
+
+# Interrogations
+
+  - name: STR_KNOW_YOUR_ENEMY
+    cost: 300
+    points: 60
+    dependencies:
+      - STR_INSURGENT_LIGHT
+      - STR_INSURGENT_MEDIUM
+      - STR_INSURGENT_HEAVY
+      - STR_INSURGENT_LEADER
+      - STR_SANGHEILI_MINOR
+      - STR_SANGHEILI_MAJOR
+      - STR_SANGHEILI_ULTRA
+      - STR_SANGHEILI_ZEALOT
+      - STR_SANGHEILI_SPECOPS
+      - STR_SANGHEILI_STEALTH
+      - STR_SANGHEILI_SHIPMASTER
+      - STR_SANGHEILI_FLEETMASTER
+      - STR_KIG_YAR_MINOR
+      - STR_KIG_YAR_MAJOR
+      - STR_KIG_YAR_SNIPER
+      - STR_UNGGOY_MINOR
+      - STR_UNGGOY_MAJOR
+      - STR_UNGGOY_HEAVY
+      - STR_UNGGOY_ULTRA
+      - STR_JIRALHANAE_MINOR
+      - STR_JIRALHANAE_MAJOR
+      - STR_JIRALHANAE_ULTRA
+      - STR_JIRALHANAE_STALKER
+      - STR_JIRALHANAE_CAPTAIN_MINOR
+      - STR_JIRALHANAE_CAPTAIN_MAJOR
+      - STR_JIRALHANAE_CAPTAIN_ULTRA
+
+# Insurgents
+  - name: STR_INSURGENT_LIGHT
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_INNIE
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_INSURGENT_MEDIUM
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_INNIE
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_INSURGENT_HEAVY
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_INNIE
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_INSURGENT_LEADER
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_INNIE
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+
+# Sangheili
+  - name: STR_SANGHEILI_MINOR
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_SANGHEILI
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_SANGHEILI_MAJOR
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_SANGHEILI
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_SANGHEILI_ULTRA
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_SANGHEILI
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_SANGHEILI_ZEALOT
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_SANGHEILI
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+      - STR_ELITE_ZEALOT_INTERROGATION
+  - name: STR_SANGHEILI_SPECOPS
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_SANGHEILI
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_SANGHEILI_STEALTH
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_SANGHEILI
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_SANGHEILI_SHIPMASTER
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_SANGHEILI
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_SANGHEILI_FLEETMASTER
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_SANGHEILI
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+      - STR_ELITE_GENERAL_INTERROGATION
+
+# Kig-Yar
+  - name: STR_KIG_YAR_MINOR
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_KIGYAR
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_KIG_YAR_MAJOR
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_KIGYAR
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_KIG_YAR_SNIPER
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_KIGYAR
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+
+# Unggoy
+  - name: STR_UNGGOY_MINOR
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_UNGGOY
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_UNGGOY_MAJOR
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_UNGGOY
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_UNGGOY_HEAVY
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_UNGGOY
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_UNGGOY_ULTRA
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_UNGGOY
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+
+# Jiralhanae
+  - name: STR_JIRALHANAE_MINOR
     cost: 192
     points: 50
     needItem: true
     destroyItem: true
     unlocks:
-      - STR_ALIEN_ORIGINS
-    lookup: STR_SECTOID    
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_JIRALHANAE_MAJOR
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_JIRALHANAE_ULTRA
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_JIRALHANAE_STALKER
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_JIRALHANAE_CAPTAIN_MINOR
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_JIRALHANAE_CAPTAIN_MAJOR
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+  - name: STR_JIRALHANAE_CAPTAIN_ULTRA
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
