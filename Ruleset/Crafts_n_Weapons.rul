@@ -153,11 +153,13 @@ crafts:
     speedMax: 580
     avoidBonus: 30
     accel: 6
-    weapons: 2
+    weapons: 4
     weaponStrings:
       - STR_30MM_CANNON_STRING
+      - STR_30MM_CANNON_STRING
       - STR_MEDUSA_MISSILE_STRING
-    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_MEDUSA_MISSILE_UC"]
+      - STR_MEDUSA_MISSILE_STRING
+    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_30MM_CANNON_UC", "STR_MEDUSA_MISSILE_UC", "STR_MEDUSA_MISSILE_UC"]
     vehicles: 0
     allowLanding: false
     costBuy: 30000
@@ -176,13 +178,15 @@ crafts:
     fuelMax: 1000
     damageMax: 300
     speedMax: 450
-    avoidBonus: 20
+    avoidBonus: 15
     accel: 4
-    weapons: 2
+    weapons: 4
     weaponStrings:
+      - STR_50MM_CANNON_STRING
+      - STR_50MM_CANNON_STRING
       - STR_ASGM10_MISSILE_STRING
       - STR_ASGM10_MISSILE_STRING
-    fixedWeapons: ["STR_ASGM10_MISSILE_UC", "STR_ASGM10_MISSILE_UC"]
+    fixedWeapons: ["STR_50MM_CANNON_UC", "STR_50MM_CANNON_UC", "STR_ASGM10_MISSILE_UC", "STR_ASGM10_MISSILE_UC"]
     vehicles: 0
     allowLanding: false
     costBuy: 35000
@@ -260,68 +264,13 @@ crafts:
 # sprite: 106 | INTICON min: 106 | INTICON dogfight: 117 | BASEBITS: 139
   - type: STR_S14_BASELARD
     sprite: 106
-    fuelMax: 1400
-    damageMax: 380
-    shieldCapacity: 200
-    shieldRechargedAtBase: 200
-    shieldRecharge: 80
-    speedMax: 820
-    avoidBonus: 70
-    accel: 7
-    weapons: 3
-    weaponStrings:
-      - STR_30MM_CANNON_STRING
-      - STR_30MM_CANNON_STRING
-      - STR_ARCHER_MISSILE_STRING
-    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_30MM_CANNON_UC", "STR_ARCHER_MISSILE_DOUBLE_UC"]
-    vehicles: 0
-    allowLanding: false
-    costBuy: 40000
-    costSell: 25000
-    refuelRate: 15
-    transferTime: 96
-    autoPatrol: true
-    sightRange: 0
-    radarRange: 150
-    radarChance: 18
-    score: 350
-
-  - type: STR_B65_SHORTSWORD
-    sprite: 107
-    fuelMax: 1500
-    damageMax: 450
-    speedMax: 680
-    avoidBonus: 40
-    accel: 6
-    weapons: 4
-    weaponStrings:
-      - STR_30MM_CANNON_STRING
-      - STR_ARCHER_MISSILE_STRING
-      - STR_ASGM10_MISSILE_STRING
-      - STR_ASGM10_MISSILE_STRING
-    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_ARCHER_MISSILE_DOUBLE_UC", "STR_ASGM10_MISSILE_UC", "STR_ASGM10_MISSILE_UC"]
-    vehicles: 0
-    allowLanding: false
-    costBuy: 48000
-    costSell: 36000
-    refuelRate: 12
-    transferTime: 96
-    autoPatrol: true
-    sightRange: 0
-    radarRange: 140
-    radarChance: 15
-    score: 450
-
-# sprite: 102 | INTICON min: 102 | INTICON dogfight: 113 | BASEBITS: 135
-  - type: STR_SABRE_FIGHTER
-    sprite: 102
-    fuelMax: 1000
-    damageMax: 250
-    shieldCapacity: 100
-    shieldRechargedAtBase: 100
-    shieldRecharge: 50
-    speedMax: 700
-    avoidBonus: 50
+    fuelMax: 1150
+    damageMax: 320
+    shieldCapacity: 140
+    shieldRechargedAtBase: 140
+    shieldRecharge: 60
+    speedMax: 720
+    avoidBonus: 55
     accel: 8
     weapons: 4
     weaponStrings:
@@ -332,20 +281,109 @@ crafts:
     fixedWeapons: ["STR_30MM_CANNON_UC", "STR_30MM_CANNON_UC", "STR_MEDUSA_MISSILE_UC", "STR_MEDUSA_MISSILE_UC"]
     vehicles: 0
     allowLanding: false
-    costBuy: 55000
-    costSell: 45000
+    costBuy: 120000
+    costSell: 80000
+    refuelRate: 15
+    transferTime: 96
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 150
+    radarChance: 18
+    score: 600
+
+# 5. B-65 Shortsword (Improved Bomber) - TIER 2 (tech-gated)
+# requires: Covenant navigation module
+# Long range and good radar thanks to Covenant nav, but outclassed by the Longsword.
+# sprite: 107 | INTICON min: 107 | INTICON dogfight: 118 | BASEBITS: 140
+  - type: STR_B65_SHORTSWORD
+    sprite: 107
+    fuelMax: 1300
+    damageMax: 560
+    speedMax: 600
+    avoidBonus: 45
+    accel: 6
+    weapons: 4
+    weaponStrings:
+      - STR_50MM_CANNON_STRING
+      - STR_50MM_CANNON_STRING
+      - STR_ASGM10_MISSILE_STRING
+      - STR_ASGM10_MISSILE_STRING
+    fixedWeapons: ["STR_50MM_CANNON_UC", "STR_50MM_CANNON_UC", "STR_ASGM10_MISSILE_UC", "STR_ASGM10_MISSILE_UC"]
+    vehicles: 0
+    allowLanding: false
+    costBuy: 130000
+    costSell: 88000
+    refuelRate: 12
+    transferTime: 96
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 140
+    radarChance: 15
+    score: 600
+
+# sprite: 108 | INTICON min: 108 | INTICON dogfight: 119 | BASEBITS: 141
+  - type: STR_F29_NANDAO
+    sprite: 108
+    fuelMax: 1450
+    damageMax: 560
+    shieldCapacity: 170
+    shieldRechargedAtBase: 170
+    shieldRecharge: 70
+    speedMax: 810
+    avoidBonus: 68
+    accel: 10
+    weapons: 4
+    weaponStrings:
+      - STR_30MM_CANNON_STRING
+      - STR_30MM_CANNON_STRING
+      - STR_MEDUSA_MISSILE_STRING
+      - STR_MEDUSA_MISSILE_STRING
+    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_30MM_CANNON_UC", "STR_MEDUSA_MISSILE_UC", "STR_MEDUSA_MISSILE_UC"]
+    vehicles: 0
+    allowLanding: false
+    costBuy: 170000
+    costSell: 115000
+    refuelRate: 15
+    transferTime: 96
+    autoPatrol: true
+    sightRange: 0
+    radarRange: 170
+    radarChance: 20
+    score: 600
+
+# sprite: 102 | INTICON min: 102 | INTICON dogfight: 113 | BASEBITS: 135
+  - type: STR_SABRE_FIGHTER
+    sprite: 102
+    fuelMax: 1800
+    damageMax: 950
+    shieldCapacity: 220
+    shieldRechargedAtBase: 220
+    shieldRecharge: 90
+    speedMax: 900
+    avoidBonus: 85
+    accel: 12
+    weapons: 4
+    weaponStrings:
+      - STR_30MM_CANNON_STRING
+      - STR_30MM_CANNON_STRING
+      - STR_MEDUSA_MISSILE_STRING
+      - STR_MEDUSA_MISSILE_STRING
+    fixedWeapons: ["STR_30MM_CANNON_UC", "STR_30MM_CANNON_UC", "STR_MEDUSA_MISSILE_UC", "STR_MEDUSA_MISSILE_UC"]
+    vehicles: 0
+    allowLanding: false
+    costBuy: 250000
+    costSell: 175000
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
     sightRange: 0
-    radarRange: 100
-    radarChance: 10
+    radarRange: 200
+    radarChance: 24
     score: 400
 
 ###################################
 ########## TRANSPORTS ############
 #################################
-
 # sprite: 120 | INTICON min: 120-122 | INTICON dogfight: 131-133 | BASEBITS: 153-155
   - type: STR_PELICAN_DROPSHIP
     sprite: 120
@@ -414,11 +452,11 @@ crafts:
 # sprite: 103 | INTICON min: 103 | INTICON dogfight: 114 | BASEBITS: 136
   - type: STR_LONGSWORD_FIGHTER
     sprite: 103
-    fuelMax: 1000
-    damageMax: 550
-    speedMax: 600
-    avoidBonus: 40
-    accel: 6
+    fuelMax: 1600
+    damageMax: 800
+    speedMax: 760
+    avoidBonus: 60
+    accel: 9
     weapons: 4
     weaponStrings:
       - STR_50MM_CANNON_STRING
@@ -428,14 +466,14 @@ crafts:
     fixedWeapons: ["STR_50MM_CANNON_UC", "STR_50MM_CANNON_UC", "STR_ASGM10_MISSILE_UC", "STR_ASGM10_MISSILE_UC"]
     vehicles: 0
     allowLanding: false
-    costBuy: 65000
-    costSell: 45000
+    costBuy: 200000
+    costSell: 140000
     refuelRate: 20
     transferTime: 72
     autoPatrol: true
     sightRange: 0
-    radarRange: 100
-    radarChance: 10
+    radarRange: 160
+    radarChance: 18
     score: 400
 
 ###################################
@@ -615,9 +653,9 @@ craftWeapons:
     shieldDamageModifier: 100
     range: 65
     accuracy: 90
-    reloadCautious: 90
-    reloadStandard: 90
-    reloadAggressive: 90
+    reloadCautious: 64
+    reloadStandard: 64
+    reloadAggressive: 64
     ammoMax: 10
     rearmRate: 5
     launcher: STR_MAC_LAUNCHER
@@ -704,22 +742,6 @@ craftWeapons:
     projectileType: 3
     projectileSpeed: 8
 
- - type: STR_ARCHER_MISSILE_DOUBLE_UC
-    sprite: 306
-    sound: 5
-    damage: 200
-    shieldDamageModifier: 30
-    range: 60
-    accuracy: 50
-    reloadCautious: 44
-    reloadStandard: 44
-    reloadAggressive: 30
-    ammoMax: 2
-    rearmRate: 13
-    launcher: STR_ARCHER_MISSILE_LAUNCHER_DOUBLE
-    projectileType: 1
-    projectileSpeed: 12
-
   - type: STR_ARCHER_MISSILE_UC
     sprite: 306
     sound: 5
@@ -731,7 +753,7 @@ craftWeapons:
     reloadStandard: 48
     reloadAggressive: 32
     ammoMax: 26
-    rearmRate: 30
+    rearmRate: 13
     launcher: STR_ARCHER_MISSILE_LAUNCHER
     projectileType: 1
     projectileSpeed: 12
@@ -743,9 +765,9 @@ craftWeapons:
     shieldDamageModifier: 30
     range: 30
     accuracy: 80
-    reloadCautious: 36
-    reloadStandard: 26
-    reloadAggressive: 24
+    reloadCautious: 48
+    reloadStandard: 48
+    reloadAggressive: 32
     ammoMax: 8
     rearmRate: 4
     launcher: STR_MEDUSA_MISSILE_LAUNCHER
@@ -808,12 +830,6 @@ items:
     # costSell: 27000
     transferTime: 48
 
-  - type: STR_ARCHER_MISSILE_LAUNCHER_DOUBLE
-    size: 1.5
-    # costBuy: 35000
-    # costSell: 37500
-    transferTime: 48
-
   - type: STR_ARCHER_MISSILE_LAUNCHER
     size: 1.5
     # costBuy: 35000
@@ -868,6 +884,7 @@ extraSprites:
       138: Resources/Crafts/WombatBomber_base.png
       139: Resources/Crafts/BaselardFighter_base.png
       140: Resources/Crafts/ShortswordBomber_base.png
+      141: Resources/Crafts/NandaoFighter_base.png
       153: Resources/Crafts/PelicanDropship_base1.png
       154: Resources/Crafts/PelicanDropship_base2.png
       155: Resources/Crafts/PelicanDropship_base3.png
@@ -890,6 +907,7 @@ extraSprites:
       105: Resources/Crafts/WombatBomber_minimised.png
       106: Resources/Crafts/BaselardFighter_minimised.png
       107: Resources/Crafts/ShortswordBomber_minimised.png
+      108: Resources/Crafts/NandaoFighter_minimised.png
       120: Resources/Crafts/PelicanDropship_minimised.png
       121: Resources/Crafts/PelicanDropship_minimised.png
       122: Resources/Crafts/PelicanDropship_minimised.png
@@ -911,6 +929,7 @@ extraSprites:
       116: Resources/Crafts/WombatBomber_dogfight.png
       117: Resources/Crafts/BaselardFighter_dogfight.png
       118: Resources/Crafts/ShortswordBomber_dogfight.png
+      119: Resources/Crafts/NandaoFighter_dogfight.png
       131: Resources/Crafts/PelicanDropship_dogfight.png
       132: Resources/Crafts/PelicanDropship_dogfight.png
       133: Resources/Crafts/PelicanDropship_dogfight.png
