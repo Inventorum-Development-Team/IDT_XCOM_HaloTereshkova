@@ -146,7 +146,7 @@ crafts:
 #################################
 
 # sprite: 104 | INTICON min: 104 | INTICON dogfight: 115 | BASEBITS: 137
-  - type: STR_F23_FALCATA
+  - type: STR_FALCATA_FIGHTER
     sprite: 104
     fuelMax: 800
     damageMax: 150
@@ -173,7 +173,7 @@ crafts:
     score: 200
 
 # sprite: 105 | INTICON min: 105 | INTICON dogfight: 116 | BASEBITS: 138
-  - type: STR_F99_WOMBAT
+  - type: STR_WOMBAT_UCAV
     sprite: 105
     fuelMax: 1000
     damageMax: 300
@@ -262,7 +262,7 @@ crafts:
 #################################
 
 # sprite: 106 | INTICON min: 106 | INTICON dogfight: 117 | BASEBITS: 139
-  - type: STR_S14_BASELARD
+  - type: STR_BASELARD_FIGHTER
     sprite: 106
     fuelMax: 1150
     damageMax: 320
@@ -291,11 +291,8 @@ crafts:
     radarChance: 18
     score: 600
 
-# 5. B-65 Shortsword (Improved Bomber) - TIER 2 (tech-gated)
-# requires: Covenant navigation module
-# Long range and good radar thanks to Covenant nav, but outclassed by the Longsword.
 # sprite: 107 | INTICON min: 107 | INTICON dogfight: 118 | BASEBITS: 140
-  - type: STR_B65_SHORTSWORD
+  - type: STR_SHORTSWORD_BOMBER
     sprite: 107
     fuelMax: 1300
     damageMax: 560
@@ -322,7 +319,7 @@ crafts:
     score: 600
 
 # sprite: 108 | INTICON min: 108 | INTICON dogfight: 119 | BASEBITS: 141
-  - type: STR_F29_NANDAO
+  - type: STR_NANDAO_FIGHTER
     sprite: 108
     fuelMax: 1450
     damageMax: 560
@@ -481,7 +478,7 @@ crafts:
 #################################
 
 # sprite: 140 | INTICON min: 140-142 | INTICON dogfight: 151-153 | BASEBITS: 173-175
-  - type: STR_D96_ALBATROSS
+  - type: STR_ALBATROSS_DROPSHIP
     sprite: 140
     maxSkinIndex: 2            # default 0
     skinSprites: [141,142] # default empty, contains all sprites except for the first (index zero)
