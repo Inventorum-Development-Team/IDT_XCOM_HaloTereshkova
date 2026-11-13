@@ -339,6 +339,51 @@ ufopaedia:
       width: 205
       height: 80
     image_id: CHARON_FRIGATE_PEDIA.SPK
+  - id: STR_FALCATA_FIGHTER
+    type_id: 1
+    section: STR_VEHICLES
+    text: STR_FALCATA_FIGHTER_UFOPEDIA
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 150
+      width: 205
+      height: 80
+    image_id: FALCATA_FIGHTER_PEDIA.SPK
+  - id: STR_BASELARD_FIGHTER
+    type_id: 1
+    section: STR_VEHICLES
+    text: STR_BASELARD_FIGHTER_UFOPEDIA
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 150
+      width: 205
+      height: 80
+    image_id: BASELARD_FIGHTER_PEDIA.SPK
+  - id: STR_NANDAO_FIGHTER
+    type_id: 1
+    section: STR_VEHICLES
+    text: STR_NANDAO_FIGHTER_UFOPEDIA
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 150
+      width: 205
+      height: 80
+    image_id: NANDAO_FIGHTER_PEDIA.SPK
   - id: STR_SABRE_FIGHTER
     type_id: 1
     section: STR_VEHICLES
@@ -354,6 +399,36 @@ ufopaedia:
       width: 205
       height: 80
     image_id: SABRE_FIGHTER_PEDIA.SPK
+  - id: STR_WOMBAT_UCAV
+    type_id: 1
+    section: STR_VEHICLES
+    text: STR_WOMBAT_UCAV_UFOPEDIA
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 150
+      width: 205
+      height: 80
+    image_id: WOMBAT_UCAV_PEDIA.SPK
+  - id: STR_SHORTSWORD_BOMBER
+    type_id: 1
+    section: STR_VEHICLES
+    text: STR_SHORTSWORD_BOMBER_UFOPEDIA
+    rect_stats:
+      x: 5
+      y: 125
+      width: 130
+      height: 80
+    rect_text:
+      x: 110
+      y: 150
+      width: 205
+      height: 80
+    image_id: SHORTSWORD_BOMBER_PEDIA.SPK
   - id: STR_LONGSWORD_FIGHTER
     type_id: 1
     section: STR_VEHICLES
