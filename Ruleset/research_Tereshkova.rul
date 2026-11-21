@@ -15,6 +15,7 @@ research:
       - STR_INNIE_OFFICER_INTERROGATION
     unlocks:
       - STR_EARLY_WARNING_ARRAY
+      - STR_ONI_INITIAL_INVESTIGATION
 
   - name: STR_EARLY_WARNING_ARRAY
     cost: 120
