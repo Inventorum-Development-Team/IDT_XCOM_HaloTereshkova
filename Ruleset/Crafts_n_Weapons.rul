@@ -501,7 +501,7 @@ crafts:
     score: 400
     repairRate: 100
     battlescapeTerrainData:
-      name: D96_ALBATROSS
+      name: PELICAN_DROPSHIP
       mapDataSets:
         - BLANKS
         - BD_PLANE
@@ -510,7 +510,7 @@ crafts:
         - ELEVATOR_TILES
         - OBJECTIVE
       mapBlocks:
-        - name: D96_ALBATROSS
+        - name: PELICAN_DROPSHIP
           width: 20
           length: 20
           height: 11
@@ -877,11 +877,11 @@ extraSprites:
       134: Resources/Crafts/CharonFrigate_base.png
       135: Resources/Crafts/SabreFighter_base.png
       136: Resources/Crafts/LongswordFighter_base.png
-      137: Resources/Crafts/FalcataFighter_base.png
-      138: Resources/Crafts/WombatBomber_base.png
-      139: Resources/Crafts/BaselardFighter_base.png
-      140: Resources/Crafts/ShortswordBomber_base.png
-      141: Resources/Crafts/NandaoFighter_base.png
+      137: Resources/Crafts/Falcata_base.png
+      138: Resources/Crafts/Wombat_base.png
+      139: Resources/Crafts/Baselard_base.png
+      140: Resources/Crafts/Shortsword_base.png
+      141: Resources/Crafts/Nandao_base.png
       153: Resources/Crafts/PelicanDropship_base1.png
       154: Resources/Crafts/PelicanDropship_base2.png
       155: Resources/Crafts/PelicanDropship_base3.png
@@ -900,11 +900,11 @@ extraSprites:
       101: Resources/Crafts/CharonFrigate_minimised.png
       102: Resources/Crafts/SabreFighter_minimised.png
       103: Resources/Crafts/LongswordFighter_minimised.png
-      104: Resources/Crafts/FalcataFighter_minimised.png
-      105: Resources/Crafts/WombatBomber_minimised.png
-      106: Resources/Crafts/BaselardFighter_minimised.png
-      107: Resources/Crafts/ShortswordBomber_minimised.png
-      108: Resources/Crafts/NandaoFighter_minimised.png
+      104: Resources/Crafts/Falcata_minimised.png
+      105: Resources/Crafts/Wombat_minimised.png
+      106: Resources/Crafts/Baselard_minimised.png
+      107: Resources/Crafts/Shortsword_minimised.png
+      108: Resources/Crafts/Nandao_minimised.png
       120: Resources/Crafts/PelicanDropship_minimised.png
       121: Resources/Crafts/PelicanDropship_minimised.png
       122: Resources/Crafts/PelicanDropship_minimised.png
@@ -922,11 +922,11 @@ extraSprites:
       112: Resources/Crafts/CharonFrigate_dogfight.png
       113: Resources/Crafts/SabreFighter_dogfight.png
       114: Resources/Crafts/LongswordFighter_dogfight.png
-      115: Resources/Crafts/FalcataFighter_dogfight.png
-      116: Resources/Crafts/WombatBomber_dogfight.png
-      117: Resources/Crafts/BaselardFighter_dogfight.png
-      118: Resources/Crafts/ShortswordBomber_dogfight.png
-      119: Resources/Crafts/NandaoFighter_dogfight.png
+      115: Resources/Crafts/Falcata_dogfight.png
+      116: Resources/Crafts/Wombat_dogfight.png
+      117: Resources/Crafts/Baselard_dogfight.png
+      118: Resources/Crafts/Shortsword_dogfight.png
+      119: Resources/Crafts/Nandao_dogfight.png
       131: Resources/Crafts/PelicanDropship_dogfight.png
       132: Resources/Crafts/PelicanDropship_dogfight.png
       133: Resources/Crafts/PelicanDropship_dogfight.png
