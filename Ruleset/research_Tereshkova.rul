@@ -1,13 +1,4 @@
 research:
-  - name: STR_INNIE_OFFICER_INTERROGATION
-    cost: 50
-    points: 20
-    dependencies:
-      - STR_ALIEN_CONTAINMENT
-    unlocks:
-      - STR_INNIE_INTEL_UNUSUAL_ACTIVITY
-      - STR_HEAVY_WEAPON_REQUEST
-
   - name: STR_INNIE_INTEL_UNUSUAL_ACTIVITY
     cost: 80
     points: 30
@@ -24,6 +15,14 @@ research:
       - STR_INNIE_INTEL_UNUSUAL_ACTIVITY
     unlocks:
       - STR_SOS_TO_NAVY
+
+  - name: STR_ONI_INITIAL_INVESTIGATION
+    cost: 160
+    points: 50
+    dependencies:
+      - STR_INNIE_INTEL_UNUSUAL_ACTIVITY
+    unlocks:
+      - STR_ALIEN_CONTAINMENT
 
   - name: STR_ELITE_INTERROGATION
     cost: 160
@@ -167,6 +166,9 @@ research:
   - name: STR_ONI_SUPPORT
     cost: 140
     points: 50
+    dependencies:
+      - STR_ONI_INITIAL_INVESTIGATION
+      - STR_REQUEST_FOR_REINFORCEMENTS
     unlocks:
       - STR_SPARTAN_THREE_ARRIVAL
       - STR_ONI_SKUNKWORKS
@@ -241,7 +243,7 @@ research:
       - STR_ARTIFACT_SITE_MAPPING
       - STR_CAPITAL_SHIP_INTEL
 
-# Enemies 
+# Enemies
   - name: STR_INNIE
     points: 50
     needItem: true
@@ -254,88 +256,302 @@ research:
   - name: STR_KIGYAR
     points: 50
     needItem: true
+  - name: STR_YANMEE
+    points: 50
+    needItem: true
   - name: STR_HUMAN_AUTOPSY
     points: 50
     needItem: true
   - name: STR_SANGHEILI_AUTOPSY
     points: 50
     needItem: true
-  - name: STR_SILACOID
+
+# Covenant Ships 
+  - name: STR_SERAPH_FIGHTER
     points: 50
     needItem: true
-      
-# Autopsies
-  - name: STR_ZOMBIE_CORPSE
+  - name: STR_BANSHEE_FIGHTER
+    points: 50
+    needItem: true
+  - name: STR_SPIRIT_DROPSHIP
+    points: 50
+    needItem: true
+  - name: STR_SDV_CLASS_HEAVY_CORVETTE
+    points: 50
+    needItem: true
+  - name: STR_CPV_CLASS_HEAVY_DESTROYER
+    points: 50
+    needItem: true
+  - name: STR_CCS_CLASS_BATTLECRUISER
+    points: 50
+    needItem: true
+  - name: STR_CAS_CLASS_ASSAULT_CARRIER
+    points: 50
+    needItem: true
+
+# Covenant Autopsies
+# Sangheili
+  - name: STR_AUTOPSY_SANGHEILI
+    dependencies:
+      - STR_SANGHEILI_MINOR_CORPSE
+      - STR_SANGHEILI_MAJOR_CORPSE
+      - STR_SANGHEILI_ULTRA_CORPSE
+      - STR_SANGHEILI_ZEALOT_CORPSE
+      - STR_SANGHEILI_SPECOPS_CORPSE
+      - STR_SANGHEILI_STEALTH_CORPSE
+      - STR_SANGHEILI_SHIPMASTER_CORPSE
+      - STR_SANGHEILI_FLEETMASTER_CORPSE
+  - name: STR_SANGHEILI_MINOR_CORPSE
     cost: 180
     points: 50
-    lookup: STR_ZOMBIE_AUTOPSY
+    lookup: STR_SANGHEILI_AUTOPSY
     needItem: true
-  - name: STR_SECTOID_CORPSE
+    unlocks:
+      - STR_AUTOPSY_SANGHEILI
+  - name: STR_SANGHEILI_MAJOR_CORPSE
     cost: 180
     points: 50
-    lookup: STR_SECTOID_AUTOPSY
+    lookup: STR_SANGHEILI_AUTOPSY
     needItem: true
-  - name: STR_SNAKEMAN_CORPSE
+    unlocks:
+      - STR_AUTOPSY_SANGHEILI
+  - name: STR_SANGHEILI_ULTRA_CORPSE
     cost: 180
     points: 50
-    lookup: STR_SNAKEMAN_AUTOPSY
+    lookup: STR_SANGHEILI_AUTOPSY
     needItem: true
-  - name: STR_ETHEREAL_CORPSE
+    unlocks:
+      - STR_AUTOPSY_SANGHEILI
+  - name: STR_SANGHEILI_ZEALOT_CORPSE
     cost: 180
     points: 50
-    lookup: STR_ETHEREAL_AUTOPSY
+    lookup: STR_SANGHEILI_AUTOPSY
     needItem: true
-  - name: STR_MUTON_CORPSE
+    unlocks:
+      - STR_AUTOPSY_SANGHEILI
+  - name: STR_SANGHEILI_SPECOPS_CORPSE
     cost: 180
     points: 50
-    lookup: STR_MUTON_AUTOPSY
+    lookup: STR_SANGHEILI_AUTOPSY
     needItem: true
-  - name: STR_FLOATER_CORPSE
+    unlocks:
+      - STR_AUTOPSY_SANGHEILI
+  - name: STR_SANGHEILI_STEALTH_CORPSE
     cost: 180
     points: 50
-    lookup: STR_FLOATER_AUTOPSY
+    lookup: STR_SANGHEILI_AUTOPSY
     needItem: true
-  - name: STR_CELATID_CORPSE
+    unlocks:
+      - STR_AUTOPSY_SANGHEILI
+  - name: STR_SANGHEILI_SHIPMASTER_CORPSE
     cost: 180
     points: 50
-    lookup: STR_CELATID_AUTOPSY
+    lookup: STR_SANGHEILI_AUTOPSY
     needItem: true
-  - name: STR_SILACOID_CORPSE
+    unlocks:
+      - STR_AUTOPSY_SANGHEILI
+  - name: STR_SANGHEILI_FLEETMASTER_CORPSE
     cost: 180
     points: 50
-    lookup: STR_SILACOID_AUTOPSY
+    lookup: STR_SANGHEILI_AUTOPSY
     needItem: true
-  - name: STR_CHRYSSALID_CORPSE
+    unlocks:
+      - STR_AUTOPSY_SANGHEILI
+
+# Kig-Yar
+  - name: STR_AUTOPSY_KIG_YAR
+    dependencies:
+      - STR_KIG_YAR_MINOR_CORPSE
+      - STR_KIG_YAR_MAJOR_CORPSE
+      - STR_KIG_YAR_SNIPER_CORPSE
+  - name: STR_KIG_YAR_MINOR_CORPSE
     cost: 180
     points: 50
-    lookup: STR_CHRYSSALID_AUTOPSY
+    lookup: STR_KIG_YAR_AUTOPSY
     needItem: true
-  - name: STR_REAPER_CORPSE
+    unlocks:
+      - STR_AUTOPSY_KIG_YAR
+  - name: STR_KIG_YAR_MAJOR_CORPSE
     cost: 180
     points: 50
-    lookup: STR_REAPER_AUTOPSY
+    lookup: STR_KIG_YAR_AUTOPSY
     needItem: true
-  - name: STR_SECTOPOD_CORPSE
+    unlocks:
+      - STR_AUTOPSY_KIG_YAR
+  - name: STR_KIG_YAR_SNIPER_CORPSE
     cost: 180
     points: 50
-    lookup: STR_SECTOPOD_AUTOPSY
+    lookup: STR_KIG_YAR_AUTOPSY
     needItem: true
-  - name: STR_CYBERDISC_CORPSE
+    unlocks:
+      - STR_AUTOPSY_KIG_YAR
+
+# Unggoy
+  - name: STR_AUTOPSY_UNGGOY
+    dependencies:
+      - STR_UNGGOY_MINOR_CORPSE
+      - STR_UNGGOY_MAJOR_CORPSE
+      - STR_UNGGOY_HEAVY_CORPSE
+      - STR_UNGGOY_ULTRA_CORPSE
+  - name: STR_UNGGOY_MINOR_CORPSE
     cost: 180
     points: 50
-    lookup: STR_CYBERDISC_AUTOPSY
+    lookup: STR_UNGGOY_AUTOPSY
     needItem: true
+    unlocks:
+      - STR_AUTOPSY_UNGGOY
+  - name: STR_UNGGOY_MAJOR_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_UNGGOY_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_UNGGOY
+  - name: STR_UNGGOY_HEAVY_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_UNGGOY_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_UNGGOY
+  - name: STR_UNGGOY_ULTRA_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_UNGGOY_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_UNGGOY
+
+# Jiralhanae
+  - name: STR_AUTOPSY_JIRALHANAE
+    dependencies:
+      - STR_JIRALHANAE_MINOR_CORPSE
+      - STR_JIRALHANAE_MAJOR_CORPSE
+      - STR_JIRALHANAE_ULTRA_CORPSE
+      - STR_JIRALHANAE_STALKER_CORPSE
+      - STR_JIRALHANAE_CAPTAIN_MINOR_CORPSE
+      - STR_JIRALHANAE_CAPTAIN_MAJOR_CORPSE
+      - STR_JIRALHANAE_CAPTAIN_ULTRA_CORPSE
+  - name: STR_JIRALHANAE_MINOR_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_JIRALHANAE_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_JIRALHANAE
+  - name: STR_JIRALHANAE_MAJOR_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_JIRALHANAE_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_JIRALHANAE
+  - name: STR_JIRALHANAE_ULTRA_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_JIRALHANAE_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_JIRALHANAE
+  - name: STR_JIRALHANAE_STALKER_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_JIRALHANAE_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_JIRALHANAE
+  - name: STR_JIRALHANAE_CAPTAIN_MINOR_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_JIRALHANAE_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_JIRALHANAE
+  - name: STR_JIRALHANAE_CAPTAIN_MAJOR_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_JIRALHANAE_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_JIRALHANAE
+  - name: STR_JIRALHANAE_CAPTAIN_ULTRA_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_JIRALHANAE_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_JIRALHANAE
+
+# Yanmee
+  - name: STR_AUTOPSY_YANMEE
+    dependencies:
+      - STR_YANMEE_PUPA_CORPSE
+      - STR_YANMEE_MINOR_CORPSE
+      - STR_YANMEE_MAJOR_CORPSE
+      - STR_YANMEE_ULTRA_CORPSE
+      - STR_YANMEE_CAPTAIN_CORPSE
+  - name: STR_YANMEE_PUPA_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_YANMEE_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_YANMEE
+  - name: STR_YANMEE_MINOR_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_YANMEE_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_YANMEE
+  - name: STR_YANMEE_MAJOR_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_YANMEE_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_YANMEE
+  - name: STR_YANMEE_ULTRA_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_YANMEE_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_YANMEE
+  - name: STR_YANMEE_CAPTAIN_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_YANMEE_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_YANMEE
+
+# Huragok
+  - name: STR_AUTOPSY_HURAGOK
+    dependencies:
+      - STR_HURAGOK_CORPSE
+  - name: STR_HURAGOK_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_HURAGOK_AUTOPSY
+    needItem: true
+    unlocks:
+      - STR_AUTOPSY_HURAGOK
 
 # Interrogations
-
-  - name: STR_KNOW_YOUR_ENEMY
-    cost: 300
-    points: 60
+  - name: STR_INSURRECTIONIST_MOVEMENT
+    cost: 250
+    points: 50
     dependencies:
       - STR_INSURGENT_LIGHT
       - STR_INSURGENT_MEDIUM
       - STR_INSURGENT_HEAVY
       - STR_INSURGENT_LEADER
+
+  - name: STR_KNOW_YOUR_ENEMY
+    cost: 300
+    points: 60
+    dependencies:
       - STR_SANGHEILI_MINOR
       - STR_SANGHEILI_MAJOR
       - STR_SANGHEILI_ULTRA
@@ -358,6 +574,12 @@ research:
       - STR_JIRALHANAE_CAPTAIN_MINOR
       - STR_JIRALHANAE_CAPTAIN_MAJOR
       - STR_JIRALHANAE_CAPTAIN_ULTRA
+      - STR_YANMEE_PUPA
+      - STR_YANMEE_MINOR
+      - STR_YANMEE_MAJOR
+      - STR_YANMEE_ULTRA
+      - STR_YANMEE_CAPTAIN
+      - STR_HURAGOK
 
 # Insurgents
   - name: STR_INSURGENT_LIGHT
@@ -367,7 +589,7 @@ research:
     destroyItem: true
     lookup: STR_INNIE
     unlocks:
-      - STR_KNOW_YOUR_ENEMY
+      - STR_INSURRECTIONIST_MOVEMENT
   - name: STR_INSURGENT_MEDIUM
     cost: 192
     points: 50
@@ -375,7 +597,7 @@ research:
     destroyItem: true
     lookup: STR_INNIE
     unlocks:
-      - STR_KNOW_YOUR_ENEMY
+      - STR_INSURRECTIONIST_MOVEMENT
   - name: STR_INSURGENT_HEAVY
     cost: 192
     points: 50
@@ -383,7 +605,7 @@ research:
     destroyItem: true
     lookup: STR_INNIE
     unlocks:
-      - STR_KNOW_YOUR_ENEMY
+      - STR_INSURRECTIONIST_MOVEMENT
   - name: STR_INSURGENT_LEADER
     cost: 192
     points: 50
@@ -391,7 +613,7 @@ research:
     destroyItem: true
     lookup: STR_INNIE
     unlocks:
-      - STR_KNOW_YOUR_ENEMY
+      - STR_INSURRECTIONIST_MOVEMENT
 
 # Sangheili
   - name: STR_SANGHEILI_MINOR
@@ -571,3 +793,98 @@ research:
     destroyItem: true
     unlocks:
       - STR_KNOW_YOUR_ENEMY
+
+# Yanmee
+  - name: STR_YANMEE_PUPA
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_YANMEE
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+    getOneFree:
+      - STR_SERAPH_FIGHTER
+      - STR_BANSHEE_FIGHTER
+      - STR_SPIRIT_DROPSHIP
+      - STR_SDV_CLASS_HEAVY_CORVETTE
+      - STR_CCS_CLASS_BATTLECRUISER
+      - STR_CPV_CLASS_HEAVY_DESTROYER
+      - STR_CAS_CLASS_ASSAULT_CARRIER
+  - name: STR_YANMEE_MINOR
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_YANMEE
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+    getOneFree:
+      - STR_SERAPH_FIGHTER
+      - STR_BANSHEE_FIGHTER
+      - STR_SPIRIT_DROPSHIP
+      - STR_SDV_CLASS_HEAVY_CORVETTE
+      - STR_CCS_CLASS_BATTLECRUISER
+      - STR_CPV_CLASS_HEAVY_DESTROYER
+      - STR_CAS_CLASS_ASSAULT_CARRIER
+  - name: STR_YANMEE_MAJOR
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_YANMEE
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+    getOneFree:
+      - STR_SERAPH_FIGHTER
+      - STR_BANSHEE_FIGHTER
+      - STR_SPIRIT_DROPSHIP
+      - STR_SDV_CLASS_HEAVY_CORVETTE
+      - STR_CCS_CLASS_BATTLECRUISER
+      - STR_CPV_CLASS_HEAVY_DESTROYER
+      - STR_CAS_CLASS_ASSAULT_CARRIER
+  - name: STR_YANMEE_ULTRA
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_YANMEE
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+    getOneFree:
+      - STR_SERAPH_FIGHTER
+      - STR_BANSHEE_FIGHTER
+      - STR_SPIRIT_DROPSHIP
+      - STR_SDV_CLASS_HEAVY_CORVETTE
+      - STR_CCS_CLASS_BATTLECRUISER
+      - STR_CPV_CLASS_HEAVY_DESTROYER
+      - STR_CAS_CLASS_ASSAULT_CARRIER
+  - name: STR_YANMEE_CAPTAIN
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_YANMEE
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+    getOneFree:
+      - STR_SERAPH_FIGHTER
+      - STR_BANSHEE_FIGHTER
+      - STR_SPIRIT_DROPSHIP
+      - STR_SDV_CLASS_HEAVY_CORVETTE
+      - STR_CCS_CLASS_BATTLECRUISER
+      - STR_CPV_CLASS_HEAVY_DESTROYER
+      - STR_CAS_CLASS_ASSAULT_CARRIER
+
+# Huragok
+  - name: STR_HURAGOK
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_HURAGOK
+    unlocks:
+      - STR_KNOW_YOUR_ENEMY
+    getOneFree:
+      - STR_SANGHEILI_MINOR_ARMOR
+      - STR_SANGHEILI_SPECOPS_ARMOR
